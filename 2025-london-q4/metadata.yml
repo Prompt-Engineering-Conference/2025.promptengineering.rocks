@@ -50,7 +50,7 @@ hero_pictures:
 - ../photos/london-2023-3.jpg
 
 # probably don't need changing
-base_path: "https://www.sreday.com/"
+base_path: "https://promptengineering.rocks/"
 base_folder: "static"
 twitter_url: https://x.com/PromptEngConf
 linkedin_url: https://www.linkedin.com/company/prompt-engineering-conference/
