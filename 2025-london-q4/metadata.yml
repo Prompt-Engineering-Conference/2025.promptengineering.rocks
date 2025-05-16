@@ -9,7 +9,7 @@ event_state: before
 date_string: "October 16, 2025"
 location_string: "Everyman Canary Wharf, London, UK"
 # get this from the event url
-luma_evt: evt-xAhCqaXMWAXAEEm
+luma_evt: evt-AyRiavyZCxqf5eM
 cfp_url: https://www.papercall.io/prompt-engineering-conference-2025-london
 
 # the number of tracks needs to be the same per day
