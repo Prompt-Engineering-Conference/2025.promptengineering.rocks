@@ -19,9 +19,7 @@ attendees: 2000
 speakers: 12
 
 rooms:
-- screen 1
-- screen 2
-- screen 3
+- track 1
 
 breaks:
 - title: Q&A
