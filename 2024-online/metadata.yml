@@ -1,22 +1,22 @@
 # TODO - change these
 
 # start time includes timezone at the end relative to UTC
-start_time: "2025-10-16T09:00:00-00:00"
+start_time: "2024-11-20T04:00:00-00:00"
 # before - no schedule
 # active - schedule
 # after  - hide ticket sales
-event_state: before
-date_string: "October 16, 2025"
-location_string: "Everyman Canary Wharf, London, UK"
+event_state: after
+date_string: "November 20, 2024"
+location_string: "Online"
 # get this from the event url
-luma_evt: evt-AyRiavyZCxqf5eM
-cfp_url: https://www.papercall.io/prompt-engineering-conference-2025-london
+luma_evt: ~
+cfp_url: ~
 
 # the number of tracks needs to be the same per day
 # the tracks will be taken in the order they appear in the CSV file
 days: 1
-attendees: 250
-speakers: 30+
+attendees: 2000
+speakers: 12
 
 rooms:
 - screen 1
@@ -24,23 +24,46 @@ rooms:
 - screen 3
 
 breaks:
-- title: Coffee break
+- title: Q&A
   duration: 30
-  comment: Main lobby
+  comment: Online
   # this decides how many talks in-between this and previous section
-  talks_before: 0
-- title: Lunch & networking
-  duration: 60
-  comment: Main lobby
-  talks_before: 4
-- title: Networking & sponsor crawl
+  talks_before: 3
+- title: Q&A
   duration: 30
-  comment: Main lobby
-  talks_before: 4
+  comment: Online
+  # this decides how many talks in-between this and previous section
+  talks_before: 3
+- title: Q&A
+  duration: 30
+  comment: Online
+  # this decides how many talks in-between this and previous section
+  talks_before: 3
 
 sponsors:
-  - logo: hockeystick.png
-    url: https://www.hockeystick.show
+  - logo: cubix-ai.png
+    url: https://cubixai.com/
+  - logo: dnd.png
+    url: https://www.dataforeningen.no/
+  - logo: it-schulungen.png
+    url: https://www.it-schulungen.com/
+  - logo: packt.png
+    url: https://www.packt.com/
+  - logo: pe-berlin.png
+    url: https://www.meetup.com/berlin-prompt-engineers-meetup/
+  - logo: pe-meetup-london.png
+    url: https://www.meetup.com/london-prompt-engineers/
+  - logo: pe-norway.png
+    url: https://www.meetup.com/promptengineering/
+  - logo: prompt-hub.png
+    url: https://www.prompthub.us/
+  - logo: prompt-perfect.png
+    url: https://promptperfect.xyz/
+  - logo: semantic-kernel.png
+    url: https://aka.ms/SKDiscord
+  - logo: conf42.png
+    url: https://www.conf42.com/
+
 
 # these get displayed at the top
 hero_pictures:
