@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-	<title>SREday - Site Reliability Engineering conferences</title>
+	<title>SREday - Everyman Canary Wharf, London, UK, October 16, 2025</title>
 	
 	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Flagship conference for SREs, DevOps and Platform engineers">
+	<meta name="description" content="SREday conference">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
@@ -23,21 +23,22 @@
 	<!-- Theme CSS -->  
 	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
 
-    <meta name="image" property="og:image" content="https://sreday.com/photos/london-2022-0.jpg">
+    <meta name="image" property="og:image" content="https://sreday.com/photos/london-2023-0.jpg">
     <meta property="og:type" content="article"/>
-    <meta property="og:title" content="SREday - London, San Francisco, New York, Tokyo, Amsterdam"/>
-    <meta property="og:description" content="Conference on Site Reliability Engineering, Cloud and DevOps. Probably the most awesome SRE conference!"/>
-
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@sreday_com">
-	<meta name="twitter:creator" content="@sreday_com">
-    <meta name="twitter:title" content="SREday - London, San Francisco, New York, Tokyo, Amsterdam"/>
-    <meta name="twitter:description" content="Conference on Site Reliability Engineering, Cloud and DevOps. Probably the most awesome SRE conference in !"/>
-    <meta name="twitter:image" content="https://sreday.com/photos/london-2022-0.jpg">
+    <meta property="og:title" content="SREday - Everyman Canary Wharf, London, UK - October 16, 2025"/>
+    <meta property="og:description" content="Conference on Site Reliability Engineering, Cloud and DevOps. Probably the most awesome SRE conference in Everyman Canary Wharf, London, UK!"/>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@sreday_com">
+	<meta name="twitter:creator" content="@sreday_com">
+    <meta name="twitter:title" content="SREday - Everyman Canary Wharf, London, UK - October 16, 2025"/>
+    <meta name="twitter:description" content="Conference on Site Reliability Engineering, Cloud and DevOps. Probably the most awesome SRE conference in Everyman Canary Wharf, London, UK!"/>
+    <meta name="twitter:image" content="https://sreday.com/photos/london-2023-0.jpg">
+
 
 <!-- Twitter conversion tracking base code -->
 <script>
@@ -60,39 +61,34 @@
 </script>
 
 <style>
-.tinted {
-	box-shadow: 0 3000px rgba(0, 0, 0, 0.5) inset;
-}
-.retro {
-	font-family: 'Monoton', sans-serif;
-}
-.logo {
-	font-size: 5rem;
-	color: white;
-	font-weight: 400;
-}
-.theme-bg-primary {
-	background: #713660;
-}
-.social-list li{
-	font-size: 1.75rem;
-}
-.social-list li a{
-	color: white;
-}
+	.tinted {
+		box-shadow: 0 3000px rgba(0, 0, 0, 0.5) inset;
+	}
+	.retro {
+		font-family: 'Monoton', sans-serif;
+	}
+	.logo {
+		font-size: 5rem;
+		color: white;
+		font-weight: 400;
+	}
+	.theme-bg-primary {
+		background: #713660;
+	}
 </style>
-
-
+	
 
 <body>    
 	<header id="header" class="header fixed-top">	    
 		<div class="branding">
 			<div class="container-fluid">
 				<nav class="main-nav navbar navbar-expand-lg">
-					<div class="site-logo"><a class="scrollto" href="#home">
+					<div class="site-logo"><a class="scrollto" href="#hero-block">
                         <!-- <img class="logo-icon" src="assets/images/logo-white.svg" alt="logo"></a> -->
                     </div>
-
+					
+					<div class="navbar-btn order-lg-2"><a class="btn btn-secondary" href="#tickets">Tickets</a></div>
+					
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -100,13 +96,12 @@
 					<div id="navigation" class="navbar-collapse collapse  justify-content-lg-end me-lg-3">
 						<ul class="nav navbar-nav">
 							
-							<li class="nav-item"><a class="nav-link scrollto" href="#home">Home</a></li>                                              
-							<li class="nav-item"><a class="nav-link scrollto" href="#events">Upcoming events</a></li>
-							<li class="nav-item"><a class="nav-link scrollto" href="#past-events">Past events</a></li>
-							<li class="nav-item"><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
-							<li class="nav-item"><a class="nav-link scrollto" href="#sponsor">Sponsor</a></li>
-							<li class="nav-item"><a class="nav-link scrollto" href="#partner">Partner</a></li>
-							<li class="nav-item"><a class="nav-link" target="_blank" href="./assets/tnc.pdf">Terms & Conditions</a></li>
+							<li class="nav-item"><a class="nav-link" href="/">Home</a></li>                                              
+							<li class="nav-item"><a class="nav-link scrollto" href="#tickets">Tickets</a></li>
+							<li class="nav-item"><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
+							<li class="nav-item"><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
+							<li class="nav-item"><a class="nav-link scrollto" href="#venue">Venue</a></li>
+							<li class="nav-item"><a class="nav-link scrollto" href="#sponsors">Sponsors</a></li>
 						</ul><!--//nav-->
 					</div><!--//navabr-collapse-->
 
@@ -120,23 +115,7 @@
 		<div id="hero-carousel" class="hero-carousel carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
 			<div class="carousel-inner">
 				
-				<div class="carousel-item tinted active" style="background:url('../photos/london-2022-0.jpg') no-repeat center"></div>
-				
-				<div class="carousel-item tinted " style="background:url('../photos/london-2022-1.jpg') no-repeat center"></div>
-				
-				<div class="carousel-item tinted " style="background:url('../photos/sreday-san-francisco-2024-0.jpg') no-repeat center"></div>
-				
-				<div class="carousel-item tinted " style="background:url('../photos/sreday-san-francisco-2024-1.jpg') no-repeat center"></div>
-				
-				<div class="carousel-item tinted " style="background:url('../photos/london-2022-2.jpg') no-repeat center"></div>
-				
-				<div class="carousel-item tinted " style="background:url('../photos/london-2022-3.jpg') no-repeat center"></div>
-				
-				<div class="carousel-item tinted " style="background:url('../photos/london-2022-4.jpg') no-repeat center"></div>
-				
-				<div class="carousel-item tinted " style="background:url('../photos/london-2022-5.jpg') no-repeat center"></div>
-				
-				<div class="carousel-item tinted " style="background:url('../photos/london-2023-0.jpg') no-repeat center"></div>
+				<div class="carousel-item tinted active" style="background:url('../photos/london-2023-0.jpg') no-repeat center"></div>
 				
 				<div class="carousel-item tinted " style="background:url('../photos/london-2023-1.jpg') no-repeat center"></div>
 				
@@ -156,35 +135,19 @@
 				
 				<button type="button" data-bs-target="#hero-carousel" class="" data-bs-slide-to="3"></button>
 				
-				<button type="button" data-bs-target="#hero-carousel" class="" data-bs-slide-to="4"></button>
-				
-				<button type="button" data-bs-target="#hero-carousel" class="" data-bs-slide-to="5"></button>
-				
-				<button type="button" data-bs-target="#hero-carousel" class="" data-bs-slide-to="6"></button>
-				
-				<button type="button" data-bs-target="#hero-carousel" class="" data-bs-slide-to="7"></button>
-				
-				<button type="button" data-bs-target="#hero-carousel" class="" data-bs-slide-to="8"></button>
-				
-				<button type="button" data-bs-target="#hero-carousel" class="" data-bs-slide-to="9"></button>
-				
-				<button type="button" data-bs-target="#hero-carousel" class="" data-bs-slide-to="10"></button>
-				
-				<button type="button" data-bs-target="#hero-carousel" class="" data-bs-slide-to="11"></button>
-				
 			</div>
 		</div>
 		<div class="container">
 			<div class="hero-text-block text-center" style="max-width: 100%;">
 				<h1 class="logo retro">SREDAY</h1>
 				<h2 class="text-white">Site Reliability, DevOps and Cloud</h2>
-				<h3 class="text-white">In-person conference</h3>
-				<h4 class="text-white mt-5">New York City, San Francisco, Redmond, London, Cologne & Amsterdam</h4>
-				<ul class="social-list list-inline mt-4"> 
-					<li class="list-inline-item me-3"><a target="_blank" href="https://www.linkedin.com/company/prompt-engineering-conference/"><i class="fab fa-linkedin fa-fw"></i></a></li>
-					<li class="list-inline-item me-3"><a target="_blank" href="https://www.youtube.com/@PromptEngineeringConf"><i class="fab fa-youtube fa-fw"></i></a></li>
-					<li class="list-inline-item me-0"><a target="_blank" href="https://x.com/PromptEngConf"><i class="fab fa-twitter fa-fw"></i></a></li>
-				</ul>
+				<h3 class="text-white"><i class="far fa-calendar-alt me-2"></i>October 16, 2025 <i class="fas fa-map-marker-alt mx-2"></i>Everyman Canary Wharf, London, UK</h3>
+				<div class="hero-cta mt-5">
+					<a class="btn btn-secondary btn-lg" href="#tickets">Get Tickets</a>
+					
+					<a class="btn btn-primary btn-lg" href="https://www.papercall.io/prompt-engineering-conference-2025-london" target="_blank">CFP</a>
+					
+			    </div>
 			</div><!--//hero-text-block-->
 		</div><!--//container-->
 
@@ -195,25 +158,25 @@
 			<div class="row">
 				<div class="col-6 col-md-3">
 					<div class="item">
-						<div class="number">3</div>
-						<div class="unit">Countries</div>
+						<div class="number">1</div>
+						<div class="unit">Days</div>
 					</div><!--//item-->
 				</div><!--//col-->
 				<div class="col-6 col-md-3">
 					<div class="item">
-						<div class="number">2</div>
-						<div class="unit">Events</div>
-					</div><!--//item-->
-				</div><!--//col-->
-				<div class="col-6 col-md-3">
-					<div class="item">
-						<div class="number">100+</div>
+						<div class="number">30+</div>
 						<div class="unit">Speakers</div>
 					</div><!--//item-->
 				</div><!--//col-->
 				<div class="col-6 col-md-3">
 					<div class="item">
-						<div class="number">10000+</div>
+						<div class="number">1</div>
+						<div class="unit">Tracks</div>
+					</div><!--//item-->
+				</div><!--//col-->
+				<div class="col-6 col-md-3">
+					<div class="item">
+						<div class="number">250</div>
 						<div class="unit">Attendees</div>
 					</div><!--//item-->
 				</div><!--//col-->
@@ -225,863 +188,444 @@
 <!-- CONTENT -->
 
 
-<section id="events" class="sponsors-section section theme-bg-light text-white">
+<section id="about" class="about-section section">
+
   <div class="container">
-    <h3 class="section-heading text-center mb-3">Upcoming conferences</h3>
-    <div class="row gx-md-5">
+    <div class="event-countdown text-center mb-3">
+    
+      <h4 class="countdown-intro mb-2 text-center mb-3">Event Starts In:</h4>
+      <div id="countdown-box" class="countdown-box"></div>
+    
+    </div>
+  </div>
+  <script>
+    /* ======= Countdown ========= */
+    // set the date we're counting down to
+    var target_date = new Date("2025-10-16T09:00:00-00:00").getTime();
+     
+    // variables for time units
+    var days, hours, minutes, seconds;
+     
+    // get tag element
+    var countdown =  document.getElementById("countdown-box");
+    var days_span = document.createElement("SPAN");
+    days_span.className = 'days';
+    countdown.appendChild(days_span);
+    var hours_span = document.createElement("SPAN");
+    hours_span.className = 'hours';
+    countdown.appendChild(hours_span);
+    var minutes_span = document.createElement("SPAN");
+    minutes_span.className = 'minutes';
+    countdown.appendChild(minutes_span);
+    var secs_span = document.createElement("SPAN");
+    secs_span.className = 'secs';
+    countdown.appendChild(secs_span);
+     
+    // update the tag with id "countdown" every 1 second
+    setInterval(function () {
+     
+        // find the amount of "seconds" between now and target
+        var current_date = new Date().getTime();
+        var seconds_left = (target_date - current_date) / 1000;
+     
+        // do some time calculations
+        days = parseInt(seconds_left / 86400);
+        seconds_left = seconds_left % 86400;
+         
+        hours = parseInt(seconds_left / 3600);
+        seconds_left = seconds_left % 3600;
+         
+        minutes = parseInt(seconds_left / 60);
+        seconds = parseInt(seconds_left % 60);
+         
+        // format countdown string + set tag value.
+        days_span.innerHTML = '<span class="number">' + days + '</span>' + '<span class="unit">Days</span>';
+        hours_span.innerHTML = '<span class="number">' + hours + '</span>' + '<span class="unit">Hrs</span>';
+        minutes_span.innerHTML = '<span class="number">' + minutes + '</span>' + '<span class="unit">Mins</span>';
+        secs_span.innerHTML = '<span class="number">' + seconds + '</span>' + '<span class="unit">Secs</span>'; 
+     
+    }, 1000);
+    </script>
+</section>
 
-      
+<section id="tickets" class="tickets-section section">
+  <div class="container">
+    <h3 class="section-heading text-center mb-3">Tickets</h3>
 
-      <div class="col-12 col-lg-6 mb-4">
-        <div class="card rounded">
-          <a href="./2025-london-q4/">
-            <img src="./assets/images/events/sreday-2025-cologne-q2.jpeg" class="card-img-top rounded-top" alt="">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title mb-2">Prompt Engineering Conference 2025</h5>
-            <div class="card-text mb-3">
-              <div class="meta"></div>
-            </div>
-            
-            <a href="./2025-london-q4/">Read more &rarr;</a>
-            
-          </div>
-        </div>
+    
+    <div class="row pricing mb-5 mt-10">
+      <div class="col-12 text-center">
+        <div class="ratio ratio-16x9">
+  <iframe
+    class=""
+    src="https://lu.ma/embed/event/evt-AyRiavyZCxqf5eM/simple"
+    width="800"
+    height="690"
+    frameborder="0"
+    style="border: 1px solid #bfcbda88; border-radius: 4px;"
+    allowfullscreen=""
+    aria-hidden="false"
+    tabindex="0"
+  ></iframe>
+</div>
+
+<a
+  href="https://lu.ma/event/evt-AyRiavyZCxqf5eM"
+  class="luma-checkout--button"
+  data-luma-action="checkout"
+  data-luma-event-id="evt-AyRiavyZCxqf5eM"
+>
+  Register on luma
+</a>
+
+<script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script> 
       </div>
-
-      
     </div>
-    <h3 class="section-heading text-center mb-3">Upcoming meetups</h3>
-    <div class="row gx-md-5">
+    
 
-      
-    </div>
   </div>
 </section>
 
-<section id="past-events" class="sponsors-section section theme-bg-primary text-white">
+
+<section id="schedule" class="schedule-section section theme-bg-light">
   <div class="container">
-    <h3 class="section-heading text-center mb-3 text-white">Past conferences</h3>
-    <div class="row gx-md-5">
-
-      
-
-      <div class="col-12 col-lg-6 mb-4">
-        <div class="card rounded">
-          <a href="https://2024.promptengineering.rocks/">
-            <img src="./assets/images/events/sreday-2025-cologne-q2.jpeg" class="card-img-top rounded-top" alt="">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title mb-2">Prompt Engineering Conference 2024</h5>
-            <div class="card-text mb-3">
-              <div class="meta"></div>
-            </div>
-            
-            <a href="https://2024.promptengineering.rocks/">Read more &rarr;</a>
-            
-          </div>
-        </div>
-      </div>
-
-      
-
-      <div class="col-12 col-lg-6 mb-4">
-        <div class="card rounded">
-          <a href="https://2023.promptengineering.rocks/">
-            <img src="./assets/images/events/sreday-2025-cologne-q2.jpeg" class="card-img-top rounded-top" alt="">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title mb-2">Prompt Engineering Conference 2023</h5>
-            <div class="card-text mb-3">
-              <div class="meta"></div>
-            </div>
-            
-            <a href="https://2023.promptengineering.rocks/">Read more &rarr;</a>
-            
-          </div>
-        </div>
-      </div>
-
-      
-    </div>
-
-    <h3 class="section-heading text-center mb-3 text-white">Past meetups</h3>
-    <div class="row gx-md-5">
-
-      
-    </div>
+    <h2 class="section-heading text-center mb-5">Schedule</h2>
+    <h4 class="section-heading text-center mb-5">Coming soon</h4>
   </div>
 </section>
 
 
-<section id="testimonials" class="sponsors-section section">
-  <div class="container speakers-section">
-    <h3 class="section-heading text-center mb-3">What others say about SREday</h3>
+
+<section id="speakers" class="speakers-section section">
+  <div class="container">
+    <h3 class="section-heading text-center mb-3">Speakers</h3>
     <div class="row">
 
       
 
       <div class="col-6 col-lg-3 mb-4">
         <div class="card rounded">
-          <img src="./assets/images/profiles/Alayshia Knighten.png" class="card-img-top rounded-0" alt="">
+          <a href="#modal-speaker-3" data-bs-toggle="modal" data-bs-target="#modal-speaker-3"><img src="../speakers/Ajit Jaokar.png" class="card-img-top rounded-0" alt=""></a>
           <div class="card-body">
-            <h5 class="card-title mb-2">Alayshia Knighten</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Freelance</div>
-              
-            </div>
+            <h5 class="card-title mb-2">Ajit Jaokar</h5>
             <div class="card-text mb-3">
-              SREday 2023 is the perfect conference to spark the minds of those who are looking to understand what new technology exists and a framework for networking. The movie theater provided a chill spot to meet folks.
-            </div>
-          </div>
+              <div class="meta">University of Oxford</div>
+            </div><!--//card-text-->
+            <a href="./Ajit_Jaokar_University_of_Oxford_Coming_soon">Read more &rarr;</a>
+          </div><!--//card-->
           <div class="card-footer text-muted">
             <ul class="social-list list-inline mb-0">
               
+              <li class="list-inline-item"><a  href="https://www.linkedin.com/in/ajitjaokar/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
               
               
-              
-            </ul>
+            </ul><!--//social-list-->
           </div>
-        </div>
-      </div>
+        </div><!--//card-->
+      </div><!--//col-->
 
       
 
       <div class="col-6 col-lg-3 mb-4">
         <div class="card rounded">
-          <img src="./assets/images/profiles/Alessandro Vozza.png" class="card-img-top rounded-0" alt="">
+          <a href="#modal-speaker-2" data-bs-toggle="modal" data-bs-target="#modal-speaker-2"><img src="../speakers/Dan Cleary.png" class="card-img-top rounded-0" alt=""></a>
           <div class="card-body">
-            <h5 class="card-title mb-2">Alessandro Vozza</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Developer Relations</div>
-              
-              <b class="meta">Solo.io</b>
-              
-            </div>
+            <h5 class="card-title mb-2">Dan Cleary</h5>
             <div class="card-text mb-3">
-              A cozy group of people shared their stories about SRE and Platform Engineering, forming a growing community.
-            </div>
-          </div>
+              <div class="meta">PromptHub</div>
+            </div><!--//card-text-->
+            <a href="./Dan_Cleary_PromptHub_Coming_soon">Read more &rarr;</a>
+          </div><!--//card-->
           <div class="card-footer text-muted">
             <ul class="social-list list-inline mb-0">
-              <li class="list-inline-item"><a target="_blank" href="https://twitter.com/bongo"><i class="fab fa-twitter fa-fw"></i></a></li>
+              
+              <li class="list-inline-item"><a  href="https://www.linkedin.com/in/dan-cleary-06b754123/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
               
               
-              
-            </ul>
+            </ul><!--//social-list-->
           </div>
-        </div>
-      </div>
+        </div><!--//card-->
+      </div><!--//col-->
 
       
 
       <div class="col-6 col-lg-3 mb-4">
         <div class="card rounded">
-          <img src="./assets/images/profiles/Alex Palcuie.png" class="card-img-top rounded-0" alt="">
+          <a href="#modal-speaker-0" data-bs-toggle="modal" data-bs-target="#modal-speaker-0"><img src="../speakers/Goda Go.png" class="card-img-top rounded-0" alt=""></a>
           <div class="card-body">
-            <h5 class="card-title mb-2">Alex Palcuie</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Engineering Manager, SRE</div>
-              
-              <b class="meta">Google</b>
-              
-            </div>
+            <h5 class="card-title mb-2">Goda Go</h5>
             <div class="card-text mb-3">
-              Probably the best conference venue I've been to in my life. Some good talks, and lots of nice people all around.
-            </div>
-          </div>
+              <div class="meta">AI Productivity Hub</div>
+            </div><!--//card-text-->
+            <a href="./Goda_Go_AI_Productivity_Hub_Coming_soon">Read more &rarr;</a>
+          </div><!--//card-->
           <div class="card-footer text-muted">
             <ul class="social-list list-inline mb-0">
-              <li class="list-inline-item"><a target="_blank" href="https://twitter.com/AlexPalcuie"><i class="fab fa-twitter fa-fw"></i></a></li>
+              <li class="list-inline-item"><a  href="https://twitter.com/godagoai"><i class="fab fa-twitter fa-fw"></i></a></li>
+              <li class="list-inline-item"><a  href="https://www.linkedin.com/in/godago/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
               
               
-              
-            </ul>
+            </ul><!--//social-list-->
           </div>
-        </div>
-      </div>
+        </div><!--//card-->
+      </div><!--//col-->
 
       
 
       <div class="col-6 col-lg-3 mb-4">
         <div class="card rounded">
-          <img src="./assets/images/profiles/Andrew Kirkpatrick.png" class="card-img-top rounded-0" alt="">
+          <a href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1"><img src="../speakers/Maxim Salnikov.png" class="card-img-top rounded-0" alt=""></a>
           <div class="card-body">
-            <h5 class="card-title mb-2">Andrew Kirkpatrick</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Staff DevOps Engineer</div>
-              
-              <b class="meta">StackAdapt</b>
-              
-            </div>
+            <h5 class="card-title mb-2">Maxim Salnikov</h5>
             <div class="card-text mb-3">
-              Compared to other conferences, it was a great balance of community and knowledge—not so large that it felt overwhelming or corporate, and not so small that there was plenty of opportunity to tailor the experience to individual interests. I met lots of diverse interesting people, and everyone was very approachable and friendly. I would recommend it for any skill level or specialization.
-            </div>
-          </div>
+              <div class="meta">Microsoft</div>
+            </div><!--//card-text-->
+            <a href="./Maxim_Salnikov_Microsoft_Coming_soon">Read more &rarr;</a>
+          </div><!--//card-->
           <div class="card-footer text-muted">
             <ul class="social-list list-inline mb-0">
-              <li class="list-inline-item"><a target="_blank" href="https://twitter.com/magickatt"><i class="fab fa-twitter fa-fw"></i></a></li>
+              
+              <li class="list-inline-item"><a  href="https://www.linkedin.com/in/webmax/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
               
               
-              
-            </ul>
+            </ul><!--//social-list-->
           </div>
-        </div>
-      </div>
+        </div><!--//card-->
+      </div><!--//col-->
+
+      
 
       
 
       <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/Andrew Pruski.png" class="card-img-top rounded-0" alt="">
+        <div class="card">
           <div class="card-body">
-            <h5 class="card-title mb-2">Andrew Pruski</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Field Solutions Architect</div>
-              
-              <b class="meta">Pure Storage</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              Really enjoyed the event. The venue was great, and it was really cool to have the big screen to present on. Attendees were engaging and asked lots of questions. Organizers were helpful and friendly.
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              <li class="list-inline-item"><a target="_blank" href="https://twitter.com/dbafromthecold"><i class="fab fa-twitter fa-fw"></i></a></li>
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
+            <h4>More coming soon</h4>
+          </div><!--//card-->
+        </div><!--//card-->
+      </div><!--//col-->
 
       
 
-      <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/Antonio Cobo Cuenca.png" class="card-img-top rounded-0" alt="">
-          <div class="card-body">
-            <h5 class="card-title mb-2">Antonio Cobo Cuenca</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Manager</div>
-              
-              <b class="meta">Contino</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              Good atmosphere, good conversations, and a nice venue. In-person conferences like this one are the ones I prefer to be able to learn from others.
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              <li class="list-inline-item"><a target="_blank" href="https://twitter.com/Mind_of_AC"><i class="fab fa-twitter fa-fw"></i></a></li>
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
+    </div><!--//row-->
+    <div class="speakers-cta text-center py-3"><a class="btn btn-primary btn-lg" href="#tickets">Get Tickets</a></div>
+  </div><!--//container-->
 
-      
+</section><!--//speakers-section-->
 
-      <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/Brian Murphy.png" class="card-img-top rounded-0" alt="">
-          <div class="card-body">
-            <h5 class="card-title mb-2">Brian Murphy</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Technical Staff, SRE</div>
-              
-              <b class="meta">Dell Technologies</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              I thought the presenters were all wonderful and well-spoken. The venue was splendid as well.
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              <li class="list-inline-item"><a target="_blank" href="https://twitter.com/isitvegan"><i class="fab fa-twitter fa-fw"></i></a></li>
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
+<section id="venue" class="venue-section section  theme-bg-primary text-white">
+    <div class="container">
+      <h3 class="section-heading text-center mb-5 text-white">Venue</h3>
+      <div class="row gx-5 py-lg-5">
+        <div class="col-12 col-lg-7 h-100">
+          <div class="desc">
+            <h4 class="text-white mb-3">ING Cedar</h4>
+            <p>
+              Bijlmerdreef 106 <br />
+              1102 CT Amsterdam, Netherlands <br />
+            </p>
+  
+            <div class="row pt-3">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2439.04308666577!2d4.947301077806605!3d52.31522065136921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60bec0779b835%3A0x64ee767a91985a24!2sING%20Cedar!5e0!3m2!1sen!2suk!4v1743619501435!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div><!--//row-->
+          </div><!--//desc-->
+        </div><!--//col-->
+        <div class="col-12 col-xl-3 col-lg-4 offset-lg-1 position-relative h-100 mt-5 mt-lg-0">
+          <div class="figures-holder">
+            <div class="figure figure-1"><img class="shadow" src="assets/images/venue/venue-1.jpg" alt=""></div>
+            <div class="figure figure-2"><img class="shadow" src="assets/images/venue/venue-2.jpg" alt=""></div>
+            <div class="figure figure-3"><img class="shadow" src="assets/images/venue/venue-3.jpg" alt=""></div>
+          </div><!--//figures-holder-->
+        </div><!--//col-->
+      </div><!--//row-->
+    </div><!--//container-->
+  </section><!--//venue-section-->
+  
 
-      
-
-      <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/Carly Richmond.png" class="card-img-top rounded-0" alt="">
-          <div class="card-body">
-            <h5 class="card-title mb-2">Carly Richmond</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Senior Developer Advocate</div>
-              
-              <b class="meta">Elastic</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              I really enjoyed the diverse topics and tracks at the conference this year. It was pretty cool to speak in a cinema and enjoy the other talks from comfy couches. Thanks so much, SREday!
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              <li class="list-inline-item"><a target="_blank" href="https://twitter.com/CarlyLRichmond"><i class="fab fa-twitter fa-fw"></i></a></li>
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      
-
-      <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/Christian Simon.png" class="card-img-top rounded-0" alt="">
-          <div class="card-body">
-            <h5 class="card-title mb-2">Christian Simon</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Principal Software Engineer</div>
-              
-              <b class="meta">Grafana Labs</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              You could clearly notice the effort the conference put towards giving speakers from all backgrounds a chance to share their knowledge. Also, I loved the wide scope of topics. I particularly liked the post-incident learnings, and it is one of the easiest ways to learn something for my day-to-day job.
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              <li class="list-inline-item"><a target="_blank" href="https://twitter.com/simonswine"><i class="fab fa-twitter fa-fw"></i></a></li>
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      
-
-      <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/Dave McAllister.png" class="card-img-top rounded-0" alt="">
-          <div class="card-body">
-            <h5 class="card-title mb-2">Dave McAllister</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Senior OSS Technologist</div>
-              
-              <b class="meta">NGINX</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              Amazing talks from a number of the speakers. The venue was cool, but I would have liked a quiet space for 1-1 discussions. It was really hard to find. I was surprised by the quality of the food. Hope to make it back next year.
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              <li class="list-inline-item"><a target="_blank" href="https://twitter.com/dwmcallister"><i class="fab fa-twitter fa-fw"></i></a></li>
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      
-
-      <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/David Hirsch.png" class="card-img-top rounded-0" alt="">
-          <div class="card-body">
-            <h5 class="card-title mb-2">David Hirsch</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">OSPO Program Manager</div>
-              
-              <b class="meta">Dynatrace</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              The location was lovely and easy to reach. A lot of great people open to discussion and networking. The food was delicious too.
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              <li class="list-inline-item"><a target="_blank" href="https://twitter.com/DavePeterH"><i class="fab fa-twitter fa-fw"></i></a></li>
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      
-
-      <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/Diana Todea.png" class="card-img-top rounded-0" alt="">
-          <div class="card-body">
-            <h5 class="card-title mb-2">Diana Todea</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Senior SRE - Cloud Observability</div>
-              
-              <b class="meta">Elastic</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              It was a well-mixed event with tech talks, agile talks, devrel talks, networking, sponsors' events. Overall, it was a great conference to witness new trends in tech projects. The networking was great. The organization was beyond my expectations. Definitely an event that you wouldn't want to miss.
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      
-
-      <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/Fabio Alessandro Locati.png" class="card-img-top rounded-0" alt="">
-          <div class="card-body">
-            <h5 class="card-title mb-2">Fabio Alessandro Locati</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Associate Principal Specialist Solutions Architect, Ansible</div>
-              
-              <b class="meta">Red Hat</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              I enjoyed my experience at SREday 2023 in London. The event's content (both speakers and hallway conversations) was very engaging.
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              <li class="list-inline-item"><a target="_blank" href="https://twitter.com/falocati"><i class="fab fa-twitter fa-fw"></i></a></li>
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      
-
-      <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/Fawaz Ghali.png" class="card-img-top rounded-0" alt="">
-          <div class="card-body">
-            <h5 class="card-title mb-2">Fawaz Ghali</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Principal Data Science Architect and Head of Developer Relations</div>
-              
-              <b class="meta">Hazelcast</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              Great event with lots of useful discussions and an amazing team.
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              <li class="list-inline-item"><a target="_blank" href="https://twitter.com/fawazghali"><i class="fab fa-twitter fa-fw"></i></a></li>
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      
-
-      <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/Henrik Rexed.png" class="card-img-top rounded-0" alt="">
-          <div class="card-body">
-            <h5 class="card-title mb-2">Henrik Rexed</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Cloud Native Advocate</div>
-              
-              <b class="meta">Dynatrace</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              I loved it. Great selection of talks in a wonderful venue.
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      
-
-      <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/Joy Chatterjee.png" class="card-img-top rounded-0" alt="">
-          <div class="card-body">
-            <h5 class="card-title mb-2">Joy Chatterjee</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Founder</div>
-              
-              <b class="meta">The Joy of Data</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              It was such a great experience! So glad I had the opportunity to attend and speak. Will definitely be re-applying to speak next year. The talks covered both critical aspects of SRE as well as other tools and data-related topics. Everything was super well-organized, including speaker dinners and the event venue! Mark and Mikolaj were such amazing hosts; seriously, thank you for a wonderful conference!
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              <li class="list-inline-item"><a target="_blank" href="https://twitter.com/JoyofData"><i class="fab fa-twitter fa-fw"></i></a></li>
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      
-
-      <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/Kat Gaines.png" class="card-img-top rounded-0" alt="">
-          <div class="card-body">
-            <h5 class="card-title mb-2">Kat Gaines</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Developer Advocate</div>
-              
-              <b class="meta">PagerDuty</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              SREday was a really fantastic event driven by a community-minded approach to content and networking! As a speaker, I not only felt that I had an audience who was really participating with my content, but that I also learned a ton from the other speakers.
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              <li class="list-inline-item"><a target="_blank" href="https://twitter.com/strawberryf1eld"><i class="fab fa-twitter fa-fw"></i></a></li>
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      
-
-      <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/Krishna Pomar.png" class="card-img-top rounded-0" alt="">
-          <div class="card-body">
-            <h5 class="card-title mb-2">Krishna Pomar</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Lead SRE</div>
-              
-              <b class="meta">Smarsh</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              It was a great experience for me presenting to the audience, and at the same time, it was a really good learning experience from other presenters too.
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      
-
-      <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/Ludovic Farine.png" class="card-img-top rounded-0" alt="">
-          <div class="card-body">
-            <h5 class="card-title mb-2">Ludovic Farine</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">VP of Operations</div>
-              
-              <b class="meta">Cloudsoft</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              Loved the energy, loved the attendees, and the range of speakers and industries. It was very cool to network with many great minds and discuss challenges and solutions of other SREs.
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      
-
-      <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/Madhu Kumar Reddy.png" class="card-img-top rounded-0" alt="">
-          <div class="card-body">
-            <h5 class="card-title mb-2">Madhu Kumar Reddy</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Architect</div>
-              
-              <b class="meta">Samsung</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              I thoroughly enjoyed participating in SREday 2023 as a speaker. The conference was rich with insightful topics, and the networking opportunities were invaluable. My presentation on "Chaos Engineering with Game Theory Principles" was received with great enthusiasm, and I am truly grateful for the platform to share and exchange knowledge. Thank you for organizing such a productive and enlightening event.
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      
-
-      <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/Mahesh Venkataraman.png" class="card-img-top rounded-0" alt="">
-          <div class="card-body">
-            <h5 class="card-title mb-2">Mahesh Venkataraman</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Managing Director - Advisory services enterprise architecture process and technology transformation</div>
-              
-              <b class="meta">Accenture</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              Right-sized conference designed to maximize audience and speaker interactions.
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              <li class="list-inline-item"><a target="_blank" href="https://twitter.com/maheshv713"><i class="fab fa-twitter fa-fw"></i></a></li>
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      
-
-      <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/Mandi Walls.png" class="card-img-top rounded-0" alt="">
-          <div class="card-body">
-            <h5 class="card-title mb-2">Mandi Walls</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">DevOps Advocate</div>
-              
-              <b class="meta">PagerDuty</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              Great content and a nice variety of speakers, and plenty of interesting folks in the audience as well. An excellent event for folks in the SRE space!
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              <li class="list-inline-item"><a target="_blank" href="https://twitter.com/lnxchk"><i class="fab fa-twitter fa-fw"></i></a></li>
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      
-
-      <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/Michael Cote.png" class="card-img-top rounded-0" alt="">
-          <div class="card-body">
-            <h5 class="card-title mb-2">Michael Cote</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Senior Member Of Technical Staff</div>
-              
-              <b class="meta">VMware/Pivotal</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              I like smaller, regional conferences so that I can see more people, especially those who can't travel to the massive industry events.
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              <li class="list-inline-item"><a target="_blank" href="https://twitter.com/cote"><i class="fab fa-twitter fa-fw"></i></a></li>
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      
-
-      <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/Sarjeel Yusuf.png" class="card-img-top rounded-0" alt="">
-          <div class="card-body">
-            <h5 class="card-title mb-2">Sarjeel Yusuf</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Product Manager</div>
-              
-              <b class="meta">Datadog</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              It was a great experience, and this was the first time I had ever presented a talk in a movie theater, and the level of the talks was amazing. The audience was very engaged in the talks, as was evident from the type of questions that were asked after the talk.
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              <li class="list-inline-item"><a target="_blank" href="https://twitter.com/SarjeelY"><i class="fab fa-twitter fa-fw"></i></a></li>
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      
-
-      <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/Simon Copsey.png" class="card-img-top rounded-0" alt="">
-          <div class="card-body">
-            <h5 class="card-title mb-2">Simon Copsey</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Founder & Coach</div>
-              
-              <b class="meta">Curious Coffee Club</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              SREday offered a wonderful venue for a welcoming community to learn about important topics. The buzz and variety of talks are unlike any other conference I've attended. Thank you, SREday!
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      
-
-      <div class="col-6 col-lg-3 mb-4">
-        <div class="card rounded">
-          <img src="./assets/images/profiles/Temitope Faro.png" class="card-img-top rounded-0" alt="">
-          <div class="card-body">
-            <h5 class="card-title mb-2">Temitope Faro</h5>
-            <div class="card-text mb-3 text-muted">
-              <div class="meta">Staff Engineer</div>
-              
-              <b class="meta">Depop</b>
-              
-            </div>
-            <div class="card-text mb-3">
-              It was a good opportunity to join other professionals of similar interest working to bring improvements and innovation in the field of SRE and related.
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            <ul class="social-list list-inline mb-0">
-              <li class="list-inline-item"><a target="_blank" href="https://twitter.com/topriddy"><i class="fab fa-twitter fa-fw"></i></a></li>
-              
-              
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      
-    </div>
-  </div>
-</section>
-
-
-<section id="sponsor" class="sponsors-section section theme-bg-primary text-white">
+<section id="sponsors" class="sponsors-section section">
   <div class="container">
-    <div class="row gx-md-5">
-      <div class="col-12 mb-3">
-        <h3 class="section-heading text-center text-white">Sponsor</h3>
-        <div class="sponsors-cta text-center pt-5">
-<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/sreday/30min" style="min-width:320px;height:700px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    <h3 class="section-heading text-center mb-3">Sponsors &amp; Partners</h3>
+    <div class="section-intro text-center single-col-max mx-auto mb-5">Want to become a sponsor? Get in touch!</div>
+    <div class="row logos justify-content-center">
+      
+      <div class="logo-item col-6 col-md-4 col-lg-2"><a href="https://www.hockeystick.show" target="_blank"><img src="./assets/images/sponsors/hockeystick.png" alt=""></a></div>
+      
+    </div><!--//row-->
+    <div class="sponsors-cta text-center pt-5"><a class="btn-primary btn btn-lg" href="mailto:mark@sreday.com">Become A Sponsor</a></div>
+  </div><!--//container-->
+</section><!--//sponsors-section-->
 
-<section id="partner" class="sponsors-section section theme-bg-light">
-  <div class="container">
-    <div class="row gx-md-5">
-      <div class="col-12 mb-3">
-        <h3 class="section-heading text-center mb-3">Partner</h3>
-        <div class="section-intro text-center single-col-max mx-auto">
-          Interested in bringing SREday to your city?
-        </div>
-        <div class="sponsors-cta text-center pt-5">
-          <a class="btn-secondary btn btn-lg" href="mailto:hello@promptengineering.rocks">Become A Partner</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
+
+<!-- Modal Speaker 0 -->
+<div class="modal modal-speaker modal-speaker-0" id="modal-speaker-0" tabindex="-1" role="dialog" aria-labelledby="speaker-0-ModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 id="speaker-0-ModalLabel" class="modal-title sr-only"
+>Goda Go</h4>
+          </div>
+          <div class="modal-body p-0">
+              <div class="theme-bg-light p-5">
+                  <div class="row">
+                      <div class="col-12 col-md-auto text-center">
+                          <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="../speakers/Goda Go.png" alt="" />
+                      </div>
+
+                      <div class="col text-center text-md-start mx-auto">
+                          <h2 class="name mb-2">Goda Go</h2>
+                          <div class="meta mb-2">AI Productivity Hub</div>
+                          <ul class="social-list list-inline mb-0">
+                            <li class="list-inline-item"><a  href="https://twitter.com/godagoai"><i class="fab fa-twitter fa-fw"></i></a></li>
+                            <li class="list-inline-item"><a  href="https://www.linkedin.com/in/godago/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+                            
+                            
+                          </ul><!--//social-list-->
+                      </div><!--//col-->
+                  </div><!--//row-->
+              </div>
+              <div class="desc p-2 p-lg-3">
+                <p></p>
+              </div>
+              <div class="desc p-2 p-lg-3">
+                <p></p>
+              </div>
+              <div class="desc p-2 p-lg-3">
+                <p><p>Goda Go is a TEDx speaker, AI educator, and YouTube content creator with a passion for making artificial intelligence accessible, practical, and creative. With a background in architecture and a dynamic career spanning marketing, project management, and entrepreneurship, she brings a unique perspective to the intersection of technology and creativity. As the founder of AI Productivity Hub and co-host of the Prompt Engineering Conference, Goda empowers individuals and businesses to harness the power of generative AI tools. Her mission: to inspire everyone to become a creator in the digital age.</p></p>
+              </div>
+          </div><!--//modal-body-->
+      </div><!--//modal-content-->
+  </div><!--//modal-dialog-->
+</div><!--//modal-->
+
+<!-- Modal Speaker 1 -->
+<div class="modal modal-speaker modal-speaker-1" id="modal-speaker-1" tabindex="-1" role="dialog" aria-labelledby="speaker-1-ModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 id="speaker-1-ModalLabel" class="modal-title sr-only"
+>Maxim Salnikov</h4>
+          </div>
+          <div class="modal-body p-0">
+              <div class="theme-bg-light p-5">
+                  <div class="row">
+                      <div class="col-12 col-md-auto text-center">
+                          <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="../speakers/Maxim Salnikov.png" alt="" />
+                      </div>
+
+                      <div class="col text-center text-md-start mx-auto">
+                          <h2 class="name mb-2">Maxim Salnikov</h2>
+                          <div class="meta mb-2">Microsoft</div>
+                          <ul class="social-list list-inline mb-0">
+                            
+                            <li class="list-inline-item"><a  href="https://www.linkedin.com/in/webmax/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+                            
+                            
+                          </ul><!--//social-list-->
+                      </div><!--//col-->
+                  </div><!--//row-->
+              </div>
+              <div class="desc p-2 p-lg-3">
+                <p></p>
+              </div>
+              <div class="desc p-2 p-lg-3">
+                <p></p>
+              </div>
+              <div class="desc p-2 p-lg-3">
+                <p><p>Maxim Salnikov is a seasoned technology leader with 20+ years in software development and 6+ years driving go-to-market strategy in cloud and AI. At Microsoft, he leads the Digital &amp; App Innovation business across 10 Western European countries, accelerating adoption of Azure and GitHub among startups and enterprises alike. A passionate advocate for developer success, Maxim blends strategic leadership with deep technical expertise in cloud-native, AI, and modern app development.</p>
+<p>Outside of his corporate role, Maxim is a global tech community builder and keynote speaker. He has founded leading conferences such as Prompt Engineering Conf, ngVikings, Mobile Era, and PWA Summit, and delivered 200+ talks in 26 countries. His mission: to empower developers to create the next generation of intelligent applications.</p></p>
+              </div>
+          </div><!--//modal-body-->
+      </div><!--//modal-content-->
+  </div><!--//modal-dialog-->
+</div><!--//modal-->
+
+<!-- Modal Speaker 2 -->
+<div class="modal modal-speaker modal-speaker-2" id="modal-speaker-2" tabindex="-1" role="dialog" aria-labelledby="speaker-2-ModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 id="speaker-2-ModalLabel" class="modal-title sr-only"
+>Dan Cleary</h4>
+          </div>
+          <div class="modal-body p-0">
+              <div class="theme-bg-light p-5">
+                  <div class="row">
+                      <div class="col-12 col-md-auto text-center">
+                          <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="../speakers/Dan Cleary.png" alt="" />
+                      </div>
+
+                      <div class="col text-center text-md-start mx-auto">
+                          <h2 class="name mb-2">Dan Cleary</h2>
+                          <div class="meta mb-2">PromptHub</div>
+                          <ul class="social-list list-inline mb-0">
+                            
+                            <li class="list-inline-item"><a  href="https://www.linkedin.com/in/dan-cleary-06b754123/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+                            
+                            
+                          </ul><!--//social-list-->
+                      </div><!--//col-->
+                  </div><!--//row-->
+              </div>
+              <div class="desc p-2 p-lg-3">
+                <p></p>
+              </div>
+              <div class="desc p-2 p-lg-3">
+                <p></p>
+              </div>
+              <div class="desc p-2 p-lg-3">
+                <p><p>Dan Cleary is a serial tech founder and the Co-founder &amp; CEO of PromptHub, a platform helping individuals and teams write, iterate, and collaborate on AI prompts. With a strong background in product development and a track record of founding successful startups like Tether and Modus, Dan blends technical insight with a deep understanding of user needs. He's passionate about making prompt engineering accessible, insightful, and even fun—sharing weekly updates and practical tips through his popular AI newsletter.</p></p>
+              </div>
+          </div><!--//modal-body-->
+      </div><!--//modal-content-->
+  </div><!--//modal-dialog-->
+</div><!--//modal-->
+
+<!-- Modal Speaker 3 -->
+<div class="modal modal-speaker modal-speaker-3" id="modal-speaker-3" tabindex="-1" role="dialog" aria-labelledby="speaker-3-ModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 id="speaker-3-ModalLabel" class="modal-title sr-only"
+>Ajit Jaokar</h4>
+          </div>
+          <div class="modal-body p-0">
+              <div class="theme-bg-light p-5">
+                  <div class="row">
+                      <div class="col-12 col-md-auto text-center">
+                          <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="../speakers/Ajit Jaokar.png" alt="" />
+                      </div>
+
+                      <div class="col text-center text-md-start mx-auto">
+                          <h2 class="name mb-2">Ajit Jaokar</h2>
+                          <div class="meta mb-2">University of Oxford</div>
+                          <ul class="social-list list-inline mb-0">
+                            
+                            <li class="list-inline-item"><a  href="https://www.linkedin.com/in/ajitjaokar/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+                            
+                            
+                          </ul><!--//social-list-->
+                      </div><!--//col-->
+                  </div><!--//row-->
+              </div>
+              <div class="desc p-2 p-lg-3">
+                <p></p>
+              </div>
+              <div class="desc p-2 p-lg-3">
+                <p></p>
+              </div>
+              <div class="desc p-2 p-lg-3">
+                <p><p>Ajit Jaokar is a Lectu Engineering Sciences at the University of Oxford, where he also serves as Course Director for the "Artificial Intelligence: Cloud and Edge Implementations" program. As an AI Ambassador at Oxford, he leads interdisciplinary AI reskilling initiatives and is actively shaping the future of AI education. Ajit is a Senior AI Fellow at the UK Ministry of Justice’s Justice AI Unit, advising on the national rollout of large-scale AI systems. He is the founder of Erdos Research and feynlabs, and his work focuses on early-stage AI prototypes and democratizing AI through accessible education. Ajit is a frequent speaker at global forums including the World Economic Forum, the European Parliament, and the G7. A passionate advocate for neurodiversity, he is currently writing a book on teaching AI through mathematical foundations to high school students.</p></p>
+              </div>
+          </div><!--//modal-body-->
+      </div><!--//modal-content-->
+  </div><!--//modal-dialog-->
+</div><!--//modal-->
+
 
 
 
@@ -1096,6 +640,15 @@
             <li class="list-inline-item me-3"><a target="_blank" href="https://x.com/PromptEngConf"><i class="fab fa-twitter fa-fw"></i></a></li>
             <li class="list-inline-item me-0"><a target="_blank" href="https://www.youtube.com/@PromptEngineeringConf"><i class="fab fa-youtube fa-fw"></i></a></li>
         </ul>
+        
+        <!-- <ul class="footer-links list-inline mx-auto mb-4">
+            <li class="list-inline-item"><a href="#">Code of Conduct</a></li>
+            <li class="list-inline-item">|</li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item">|</li>
+            <li class="list-inline-item me-0"><a href="#">Privacy</a></li>
+        </ul> -->
+        <!--//footer-link-->
         
          <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
         <small class="copyright">Designed with <i class="fas fa-heart" style="color: #EC645E;"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
