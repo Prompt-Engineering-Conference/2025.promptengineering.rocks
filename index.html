@@ -212,22 +212,22 @@
 
   <div class="container">
     <div class="event-countdown text-center mb-3">
-    
+      
       <h4 class="countdown-intro mb-2 text-center mb-3">Event Starts In:</h4>
       <div id="countdown-box" class="countdown-box"></div>
-    
+      
     </div>
   </div>
   <script>
     /* ======= Countdown ========= */
     // set the date we're counting down to
     var target_date = new Date("2025-10-16T09:00:00-00:00").getTime();
-     
+
     // variables for time units
     var days, hours, minutes, seconds;
-     
+
     // get tag element
-    var countdown =  document.getElementById("countdown-box");
+    var countdown = document.getElementById("countdown-box");
     var days_span = document.createElement("SPAN");
     days_span.className = 'days';
     countdown.appendChild(days_span);
@@ -240,32 +240,74 @@
     var secs_span = document.createElement("SPAN");
     secs_span.className = 'secs';
     countdown.appendChild(secs_span);
-     
+
     // update the tag with id "countdown" every 1 second
     setInterval(function () {
-     
-        // find the amount of "seconds" between now and target
-        var current_date = new Date().getTime();
-        var seconds_left = (target_date - current_date) / 1000;
-     
-        // do some time calculations
-        days = parseInt(seconds_left / 86400);
-        seconds_left = seconds_left % 86400;
-         
-        hours = parseInt(seconds_left / 3600);
-        seconds_left = seconds_left % 3600;
-         
-        minutes = parseInt(seconds_left / 60);
-        seconds = parseInt(seconds_left % 60);
-         
-        // format countdown string + set tag value.
-        days_span.innerHTML = '<span class="number">' + days + '</span>' + '<span class="unit">Days</span>';
-        hours_span.innerHTML = '<span class="number">' + hours + '</span>' + '<span class="unit">Hrs</span>';
-        minutes_span.innerHTML = '<span class="number">' + minutes + '</span>' + '<span class="unit">Mins</span>';
-        secs_span.innerHTML = '<span class="number">' + seconds + '</span>' + '<span class="unit">Secs</span>'; 
-     
+
+      // find the amount of "seconds" between now and target
+      var current_date = new Date().getTime();
+      var seconds_left = (target_date - current_date) / 1000;
+
+      // do some time calculations
+      days = parseInt(seconds_left / 86400);
+      seconds_left = seconds_left % 86400;
+
+      hours = parseInt(seconds_left / 3600);
+      seconds_left = seconds_left % 3600;
+
+      minutes = parseInt(seconds_left / 60);
+      seconds = parseInt(seconds_left % 60);
+
+      // format countdown string + set tag value.
+      days_span.innerHTML = '<span class="number">' + days + '</span>' + '<span class="unit">Days</span>';
+      hours_span.innerHTML = '<span class="number">' + hours + '</span>' + '<span class="unit">Hrs</span>';
+      minutes_span.innerHTML = '<span class="number">' + minutes + '</span>' + '<span class="unit">Mins</span>';
+      secs_span.innerHTML = '<span class="number">' + seconds + '</span>' + '<span class="unit">Secs</span>';
+
     }, 1000);
-    </script>
+  </script>
+</section>
+
+<section id="about" class="schedule-section section theme-bg-light">
+  <div class="container">
+    <h2 class="section-heading text-center mb-5">What is the Prompt Engineering Conference</h2>
+
+    <p>The Prompt Engineering Conference is the world's first event exclusively dedicated to prompt engineering. We are
+      pioneers in this field. Our close connections with top researchers, influencers, educators, and presenters ensure
+      a strong, inspirational, and skill-enhancing experience for all participants.</p>
+
+    <p>We firmly believe in the significant and substantial contribution of prompt engineering to the development of
+      AI-infused applications. To introduce this topic as an essential skill for modern developers, or even as a
+      distinct job title, we organized this conference exclusively dedicated to this field.</p>
+
+    <h4 class="section-heading text-center mb-5">Topics</h4>
+
+    <ul>
+      <li><strong>Development</strong><br />
+        Using prompts in production-ready apps. Helping companies adopt generative AI by sharing use cases, best
+        practices, and lessons learned.
+      </li>
+
+      <li>
+        <strong>Experimentation</strong><br />
+        Pure research, experiments, arts, and ideas - the "tomorrow" of prompt engineering, if you wish.
+      </li>
+    </ul>
+
+    <h4 class="section-heading text-center mb-5">Audience</h4>
+
+    <p>The Prompt Engineering Conference is open to everyone who wishes to attend, present, and collaborate. We
+      intentionally keep it online to accommodate participants from around the globe. Although we dive deeply into
+      prompt engineering, this event is not solely for technical individuals. One unique aspect of this discipline is
+      its accessibility to multiple professions: developers, linguists, data scientists, domain experts, and more—all
+      can become successful prompt engineers.</p>
+
+    <h4 class="section-heading text-center mb-5">Using AI policy</h4>
+
+    <p>We believe that 100% (or so) AI-generated sessions will not meet the quality standards we expect. At the same
+      time, we encourage presenters to use prompt engineering to improve their talk proposal and session content.</p>
+
+  </div>
 </section>
 
 <section id="tickets" class="tickets-section section">
@@ -273,7 +315,12 @@
     <h3 class="section-heading text-center mb-3">Tickets</h3>
 
     <p>
-      Please note: For the organization of the in-person Prompt Engineering Conference 2025 in London, we are proud to partner with our trusted colleagues at Conf42 - the team behind the renowned <a href="https://www.conf42.com/sre2025" target="_blank">SRE Day</a> event series. As part of this collaboration, all ticket payments will be processed by SREDAY LIMITED, a company registered in England and Wales (Company No. 09690643), and will be subject to their <a href="https://promptengineering.rocks/assets/tnc.pdf" target="_blank">Terms & Conditions.</a>
+      Please note: For the organization of the in-person Prompt Engineering Conference 2025 in London, we are proud to
+      partner with our trusted colleagues at Conf42 - the team behind the renowned <a
+        href="https://www.conf42.com/sre2025" target="_blank">SRE Day</a> event series. As part of this collaboration,
+      all ticket payments will be processed by SREDAY LIMITED, a company registered in England and Wales (Company No.
+      09690643), and will be subject to their <a href="https://promptengineering.rocks/assets/tnc.pdf"
+        target="_blank">Terms & Conditions.</a>
     </p>
 
     
@@ -302,7 +349,7 @@
   Register on luma
 </a>
 
-<script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script> 
+<script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
       </div>
     </div>
     
@@ -329,7 +376,9 @@
 
       <div class="col-6 col-lg-3 mb-4">
         <div class="card rounded">
-          <a href="#modal-speaker-6" data-bs-toggle="modal" data-bs-target="#modal-speaker-6"><img src="../speakers/Ajit Jaokar.png" class="card-img-top rounded-0" alt=""></a>
+          <a href="#modal-speaker-6" data-bs-toggle="modal"
+            data-bs-target="#modal-speaker-6"><img src="../speakers/Ajit Jaokar.png" class="card-img-top rounded-0"
+              alt=""></a>
           <div class="card-body">
             <h5 class="card-title mb-2">Ajit Jaokar</h5>
             <div class="card-text mb-3">
@@ -340,7 +389,8 @@
           <div class="card-footer text-muted">
             <ul class="social-list list-inline mb-0">
               
-              <li class="list-inline-item"><a  href="https://www.linkedin.com/in/ajitjaokar/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/in/ajitjaokar/"><i
+                    class="fab fa-linkedin-in fa-fw"></i></a></li>
               
               
             </ul><!--//social-list-->
@@ -352,7 +402,9 @@
 
       <div class="col-6 col-lg-3 mb-4">
         <div class="card rounded">
-          <a href="#modal-speaker-2" data-bs-toggle="modal" data-bs-target="#modal-speaker-2"><img src="../speakers/Dan Cleary.png" class="card-img-top rounded-0" alt=""></a>
+          <a href="#modal-speaker-2" data-bs-toggle="modal"
+            data-bs-target="#modal-speaker-2"><img src="../speakers/Dan Cleary.png" class="card-img-top rounded-0"
+              alt=""></a>
           <div class="card-body">
             <h5 class="card-title mb-2">Dan Cleary</h5>
             <div class="card-text mb-3">
@@ -363,7 +415,8 @@
           <div class="card-footer text-muted">
             <ul class="social-list list-inline mb-0">
               
-              <li class="list-inline-item"><a  href="https://www.linkedin.com/in/dan-cleary-06b754123/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/in/dan-cleary-06b754123/"><i
+                    class="fab fa-linkedin-in fa-fw"></i></a></li>
               
               
             </ul><!--//social-list-->
@@ -375,7 +428,9 @@
 
       <div class="col-6 col-lg-3 mb-4">
         <div class="card rounded">
-          <a href="#modal-speaker-0" data-bs-toggle="modal" data-bs-target="#modal-speaker-0"><img src="../speakers/Goda Go.png" class="card-img-top rounded-0" alt=""></a>
+          <a href="#modal-speaker-0" data-bs-toggle="modal"
+            data-bs-target="#modal-speaker-0"><img src="../speakers/Goda Go.png" class="card-img-top rounded-0"
+              alt=""></a>
           <div class="card-body">
             <h5 class="card-title mb-2">Goda Go</h5>
             <div class="card-text mb-3">
@@ -385,8 +440,10 @@
           </div><!--//card-->
           <div class="card-footer text-muted">
             <ul class="social-list list-inline mb-0">
-              <li class="list-inline-item"><a  href="https://twitter.com/godagoai"><i class="fab fa-twitter fa-fw"></i></a></li>
-              <li class="list-inline-item"><a  href="https://www.linkedin.com/in/godago/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+              <li class="list-inline-item"><a href="https://twitter.com/godagoai"><i
+                    class="fab fa-twitter fa-fw"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/in/godago/"><i
+                    class="fab fa-linkedin-in fa-fw"></i></a></li>
               
               
             </ul><!--//social-list-->
@@ -398,7 +455,9 @@
 
       <div class="col-6 col-lg-3 mb-4">
         <div class="card rounded">
-          <a href="#modal-speaker-3" data-bs-toggle="modal" data-bs-target="#modal-speaker-3"><img src="../speakers/Jesus Serrano.png" class="card-img-top rounded-0" alt=""></a>
+          <a href="#modal-speaker-3" data-bs-toggle="modal"
+            data-bs-target="#modal-speaker-3"><img src="../speakers/Jesus Serrano.png" class="card-img-top rounded-0"
+              alt=""></a>
           <div class="card-body">
             <h5 class="card-title mb-2">Jesus Serrano</h5>
             <div class="card-text mb-3">
@@ -409,7 +468,8 @@
           <div class="card-footer text-muted">
             <ul class="social-list list-inline mb-0">
               
-              <li class="list-inline-item"><a  href="https://www.linkedin.com/in/jscastro/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/in/jscastro/"><i
+                    class="fab fa-linkedin-in fa-fw"></i></a></li>
               
               
             </ul><!--//social-list-->
@@ -421,7 +481,9 @@
 
       <div class="col-6 col-lg-3 mb-4">
         <div class="card rounded">
-          <a href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1"><img src="../speakers/Maxim Salnikov.png" class="card-img-top rounded-0" alt=""></a>
+          <a href="#modal-speaker-1" data-bs-toggle="modal"
+            data-bs-target="#modal-speaker-1"><img src="../speakers/Maxim Salnikov.png" class="card-img-top rounded-0"
+              alt=""></a>
           <div class="card-body">
             <h5 class="card-title mb-2">Maxim Salnikov</h5>
             <div class="card-text mb-3">
@@ -432,7 +494,8 @@
           <div class="card-footer text-muted">
             <ul class="social-list list-inline mb-0">
               
-              <li class="list-inline-item"><a  href="https://www.linkedin.com/in/webmax/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/in/webmax/"><i
+                    class="fab fa-linkedin-in fa-fw"></i></a></li>
               
               
             </ul><!--//social-list-->
@@ -444,7 +507,9 @@
 
       <div class="col-6 col-lg-3 mb-4">
         <div class="card rounded">
-          <a href="#modal-speaker-4" data-bs-toggle="modal" data-bs-target="#modal-speaker-4"><img src="../speakers/Ricardo Sueiras.png" class="card-img-top rounded-0" alt=""></a>
+          <a href="#modal-speaker-4" data-bs-toggle="modal"
+            data-bs-target="#modal-speaker-4"><img src="../speakers/Ricardo Sueiras.png" class="card-img-top rounded-0"
+              alt=""></a>
           <div class="card-body">
             <h5 class="card-title mb-2">Ricardo Sueiras</h5>
             <div class="card-text mb-3">
@@ -455,7 +520,8 @@
           <div class="card-footer text-muted">
             <ul class="social-list list-inline mb-0">
               
-              <li class="list-inline-item"><a  href="https://www.linkedin.com/in/ricardosueiras/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/in/ricardosueiras/"><i
+                    class="fab fa-linkedin-in fa-fw"></i></a></li>
               
               
             </ul><!--//social-list-->
@@ -467,7 +533,9 @@
 
       <div class="col-6 col-lg-3 mb-4">
         <div class="card rounded">
-          <a href="#modal-speaker-5" data-bs-toggle="modal" data-bs-target="#modal-speaker-5"><img src="../speakers/W. Ian Douglas.png" class="card-img-top rounded-0" alt=""></a>
+          <a href="#modal-speaker-5" data-bs-toggle="modal"
+            data-bs-target="#modal-speaker-5"><img src="../speakers/W. Ian Douglas.png" class="card-img-top rounded-0"
+              alt=""></a>
           <div class="card-body">
             <h5 class="card-title mb-2">W. Ian Douglas</h5>
             <div class="card-text mb-3">
@@ -478,7 +546,8 @@
           <div class="card-footer text-muted">
             <ul class="social-list list-inline mb-0">
               
-              <li class="list-inline-item"><a  href="https://www.linkedin.com/in/iandouglas736/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/in/iandouglas736/"><i
+                    class="fab fa-linkedin-in fa-fw"></i></a></li>
               
               
             </ul><!--//social-list-->
@@ -545,315 +614,333 @@
     <div class="section-intro text-center single-col-max mx-auto mb-5">Want to become a sponsor? Get in touch!</div>
     <div class="row logos justify-content-center">
       
-      <div class="logo-item col-6 col-md-4 col-lg-2"><a href="https://www.prompthub.us/" target="_blank"><img src="./assets/images/sponsors/prompt-hub.png" alt=""></a></div>
+      <div class="logo-item col-6 col-md-4 col-lg-2"><a href="https://www.prompthub.us/" target="_blank"><img
+            src="./assets/images/sponsors/prompt-hub.png" alt=""></a></div>
       
-      <div class="logo-item col-6 col-md-4 col-lg-2"><a href="https://promptperfect.xyz/" target="_blank"><img src="./assets/images/sponsors/prompt-perfect.png" alt=""></a></div>
+      <div class="logo-item col-6 col-md-4 col-lg-2"><a href="https://promptperfect.xyz/" target="_blank"><img
+            src="./assets/images/sponsors/prompt-perfect.png" alt=""></a></div>
       
     </div><!--//row-->
-    <div class="sponsors-cta text-center pt-5"><a class="btn-primary btn btn-lg" href="mailto:hello@promptengineering.rocks">Become A Sponsor</a></div>
+    <div class="sponsors-cta text-center pt-5"><a class="btn-primary btn btn-lg"
+        href="mailto:hello@promptengineering.rocks">Become A Sponsor</a></div>
   </div><!--//container-->
 </section><!--//sponsors-section-->
 
 
 
 <!-- Modal Speaker 0 -->
-<div class="modal modal-speaker modal-speaker-0" id="modal-speaker-0" tabindex="-1" role="dialog" aria-labelledby="speaker-0-ModalLabel" aria-hidden="true">
+<div class="modal modal-speaker modal-speaker-0" id="modal-speaker-0" tabindex="-1"
+  role="dialog" aria-labelledby="speaker-0-ModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
-              <h4 id="speaker-0-ModalLabel" class="modal-title sr-only"
->Goda Go</h4>
-          </div>
-          <div class="modal-body p-0">
-              <div class="theme-bg-light p-5">
-                  <div class="row">
-                      <div class="col-12 col-md-auto text-center">
-                          <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="../speakers/Goda Go.png" alt="" />
-                      </div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 id="speaker-0-ModalLabel" class="modal-title sr-only">Goda Go</h4>
+      </div>
+      <div class="modal-body p-0">
+        <div class="theme-bg-light p-5">
+          <div class="row">
+            <div class="col-12 col-md-auto text-center">
+              <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="../speakers/Goda Go.png"
+                alt="" />
+            </div>
 
-                      <div class="col text-center text-md-start mx-auto">
-                          <h2 class="name mb-2">Goda Go</h2>
-                          <div class="meta mb-2">AI Productivity Hub</div>
-                          <ul class="social-list list-inline mb-0">
-                            <li class="list-inline-item"><a  href="https://twitter.com/godagoai"><i class="fab fa-twitter fa-fw"></i></a></li>
-                            <li class="list-inline-item"><a  href="https://www.linkedin.com/in/godago/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-                            
-                            
-                          </ul><!--//social-list-->
-                      </div><!--//col-->
-                  </div><!--//row-->
-              </div>
-              <div class="desc p-2 p-lg-3">
-                <p></p>
-              </div>
-              <div class="desc p-2 p-lg-3">
-                <p></p>
-              </div>
-              <div class="desc p-2 p-lg-3">
-                <p><p>Goda Go is a TEDx speaker, AI educator, and YouTube content creator with a passion for making artificial intelligence accessible, practical, and creative. With a background in architecture and a dynamic career spanning marketing, project management, and entrepreneurship, she brings a unique perspective to the intersection of technology and creativity. As the founder of AI Productivity Hub and co-host of the Prompt Engineering Conference, Goda empowers individuals and businesses to harness the power of generative AI tools. Her mission: to inspire everyone to become a creator in the digital age.</p></p>
-              </div>
-          </div><!--//modal-body-->
-      </div><!--//modal-content-->
+            <div class="col text-center text-md-start mx-auto">
+              <h2 class="name mb-2">Goda Go</h2>
+              <div class="meta mb-2">AI Productivity Hub</div>
+              <ul class="social-list list-inline mb-0">
+                <li class="list-inline-item"><a href="https://twitter.com/godagoai"><i
+                      class="fab fa-twitter fa-fw"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/godago/"><i
+                      class="fab fa-linkedin-in fa-fw"></i></a></li>
+                
+                
+              </ul><!--//social-list-->
+            </div><!--//col-->
+          </div><!--//row-->
+        </div>
+        <div class="desc p-2 p-lg-3">
+          <p></p>
+        </div>
+        <div class="desc p-2 p-lg-3">
+          <p></p>
+        </div>
+        <div class="desc p-2 p-lg-3">
+          <p><p>Goda Go is a TEDx speaker, AI educator, and YouTube content creator with a passion for making artificial intelligence accessible, practical, and creative. With a background in architecture and a dynamic career spanning marketing, project management, and entrepreneurship, she brings a unique perspective to the intersection of technology and creativity. As the founder of AI Productivity Hub and co-host of the Prompt Engineering Conference, Goda empowers individuals and businesses to harness the power of generative AI tools. Her mission: to inspire everyone to become a creator in the digital age.</p></p>
+        </div>
+      </div><!--//modal-body-->
+    </div><!--//modal-content-->
   </div><!--//modal-dialog-->
 </div><!--//modal-->
 
 <!-- Modal Speaker 1 -->
-<div class="modal modal-speaker modal-speaker-1" id="modal-speaker-1" tabindex="-1" role="dialog" aria-labelledby="speaker-1-ModalLabel" aria-hidden="true">
+<div class="modal modal-speaker modal-speaker-1" id="modal-speaker-1" tabindex="-1"
+  role="dialog" aria-labelledby="speaker-1-ModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
-              <h4 id="speaker-1-ModalLabel" class="modal-title sr-only"
->Maxim Salnikov</h4>
-          </div>
-          <div class="modal-body p-0">
-              <div class="theme-bg-light p-5">
-                  <div class="row">
-                      <div class="col-12 col-md-auto text-center">
-                          <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="../speakers/Maxim Salnikov.png" alt="" />
-                      </div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 id="speaker-1-ModalLabel" class="modal-title sr-only">Maxim Salnikov</h4>
+      </div>
+      <div class="modal-body p-0">
+        <div class="theme-bg-light p-5">
+          <div class="row">
+            <div class="col-12 col-md-auto text-center">
+              <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="../speakers/Maxim Salnikov.png"
+                alt="" />
+            </div>
 
-                      <div class="col text-center text-md-start mx-auto">
-                          <h2 class="name mb-2">Maxim Salnikov</h2>
-                          <div class="meta mb-2">Microsoft</div>
-                          <ul class="social-list list-inline mb-0">
-                            
-                            <li class="list-inline-item"><a  href="https://www.linkedin.com/in/webmax/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-                            
-                            
-                          </ul><!--//social-list-->
-                      </div><!--//col-->
-                  </div><!--//row-->
-              </div>
-              <div class="desc p-2 p-lg-3">
-                <p></p>
-              </div>
-              <div class="desc p-2 p-lg-3">
-                <p></p>
-              </div>
-              <div class="desc p-2 p-lg-3">
-                <p><p>Maxim Salnikov is a seasoned technology leader with 20+ years in software development and 6+ years driving go-to-market strategy in cloud and AI. At Microsoft, he leads the Digital &amp; App Innovation business across 10 Western European countries, accelerating adoption of Azure and GitHub among startups and enterprises alike. A passionate advocate for developer success, Maxim blends strategic leadership with deep technical expertise in cloud-native, AI, and modern app development.</p>
+            <div class="col text-center text-md-start mx-auto">
+              <h2 class="name mb-2">Maxim Salnikov</h2>
+              <div class="meta mb-2">Microsoft</div>
+              <ul class="social-list list-inline mb-0">
+                
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/webmax/"><i
+                      class="fab fa-linkedin-in fa-fw"></i></a></li>
+                
+                
+              </ul><!--//social-list-->
+            </div><!--//col-->
+          </div><!--//row-->
+        </div>
+        <div class="desc p-2 p-lg-3">
+          <p></p>
+        </div>
+        <div class="desc p-2 p-lg-3">
+          <p></p>
+        </div>
+        <div class="desc p-2 p-lg-3">
+          <p><p>Maxim Salnikov is a seasoned technology leader with 20+ years in software development and 6+ years driving go-to-market strategy in cloud and AI. At Microsoft, he leads the Digital &amp; App Innovation business across 10 Western European countries, accelerating adoption of Azure and GitHub among startups and enterprises alike. A passionate advocate for developer success, Maxim blends strategic leadership with deep technical expertise in cloud-native, AI, and modern app development.</p>
 <p>Outside of his corporate role, Maxim is a global tech community builder and keynote speaker. He has founded leading conferences such as Prompt Engineering Conf, ngVikings, Mobile Era, and PWA Summit, and delivered 200+ talks in 26 countries. His mission: to empower developers to create the next generation of intelligent applications.</p></p>
-              </div>
-          </div><!--//modal-body-->
-      </div><!--//modal-content-->
+        </div>
+      </div><!--//modal-body-->
+    </div><!--//modal-content-->
   </div><!--//modal-dialog-->
 </div><!--//modal-->
 
 <!-- Modal Speaker 2 -->
-<div class="modal modal-speaker modal-speaker-2" id="modal-speaker-2" tabindex="-1" role="dialog" aria-labelledby="speaker-2-ModalLabel" aria-hidden="true">
+<div class="modal modal-speaker modal-speaker-2" id="modal-speaker-2" tabindex="-1"
+  role="dialog" aria-labelledby="speaker-2-ModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
-              <h4 id="speaker-2-ModalLabel" class="modal-title sr-only"
->Dan Cleary</h4>
-          </div>
-          <div class="modal-body p-0">
-              <div class="theme-bg-light p-5">
-                  <div class="row">
-                      <div class="col-12 col-md-auto text-center">
-                          <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="../speakers/Dan Cleary.png" alt="" />
-                      </div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 id="speaker-2-ModalLabel" class="modal-title sr-only">Dan Cleary</h4>
+      </div>
+      <div class="modal-body p-0">
+        <div class="theme-bg-light p-5">
+          <div class="row">
+            <div class="col-12 col-md-auto text-center">
+              <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="../speakers/Dan Cleary.png"
+                alt="" />
+            </div>
 
-                      <div class="col text-center text-md-start mx-auto">
-                          <h2 class="name mb-2">Dan Cleary</h2>
-                          <div class="meta mb-2">PromptHub</div>
-                          <ul class="social-list list-inline mb-0">
-                            
-                            <li class="list-inline-item"><a  href="https://www.linkedin.com/in/dan-cleary-06b754123/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-                            
-                            
-                          </ul><!--//social-list-->
-                      </div><!--//col-->
-                  </div><!--//row-->
-              </div>
-              <div class="desc p-2 p-lg-3">
-                <p></p>
-              </div>
-              <div class="desc p-2 p-lg-3">
-                <p></p>
-              </div>
-              <div class="desc p-2 p-lg-3">
-                <p><p>Dan Cleary is a serial tech founder and the Co-founder &amp; CEO of PromptHub, a platform helping individuals and teams write, iterate, and collaborate on AI prompts. With a strong background in product development and a track record of founding successful startups like Tether and Modus, Dan blends technical insight with a deep understanding of user needs. He's passionate about making prompt engineering accessible, insightful, and even fun—sharing weekly updates and practical tips through his popular AI newsletter.</p></p>
-              </div>
-          </div><!--//modal-body-->
-      </div><!--//modal-content-->
+            <div class="col text-center text-md-start mx-auto">
+              <h2 class="name mb-2">Dan Cleary</h2>
+              <div class="meta mb-2">PromptHub</div>
+              <ul class="social-list list-inline mb-0">
+                
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/dan-cleary-06b754123/"><i
+                      class="fab fa-linkedin-in fa-fw"></i></a></li>
+                
+                
+              </ul><!--//social-list-->
+            </div><!--//col-->
+          </div><!--//row-->
+        </div>
+        <div class="desc p-2 p-lg-3">
+          <p></p>
+        </div>
+        <div class="desc p-2 p-lg-3">
+          <p></p>
+        </div>
+        <div class="desc p-2 p-lg-3">
+          <p><p>Dan Cleary is a serial tech founder and the Co-founder &amp; CEO of PromptHub, a platform helping individuals and teams write, iterate, and collaborate on AI prompts. With a strong background in product development and a track record of founding successful startups like Tether and Modus, Dan blends technical insight with a deep understanding of user needs. He's passionate about making prompt engineering accessible, insightful, and even fun—sharing weekly updates and practical tips through his popular AI newsletter.</p></p>
+        </div>
+      </div><!--//modal-body-->
+    </div><!--//modal-content-->
   </div><!--//modal-dialog-->
 </div><!--//modal-->
 
 <!-- Modal Speaker 3 -->
-<div class="modal modal-speaker modal-speaker-3" id="modal-speaker-3" tabindex="-1" role="dialog" aria-labelledby="speaker-3-ModalLabel" aria-hidden="true">
+<div class="modal modal-speaker modal-speaker-3" id="modal-speaker-3" tabindex="-1"
+  role="dialog" aria-labelledby="speaker-3-ModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
-              <h4 id="speaker-3-ModalLabel" class="modal-title sr-only"
->Jesus Serrano</h4>
-          </div>
-          <div class="modal-body p-0">
-              <div class="theme-bg-light p-5">
-                  <div class="row">
-                      <div class="col-12 col-md-auto text-center">
-                          <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="../speakers/Jesus Serrano.png" alt="" />
-                      </div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 id="speaker-3-ModalLabel" class="modal-title sr-only">Jesus Serrano</h4>
+      </div>
+      <div class="modal-body p-0">
+        <div class="theme-bg-light p-5">
+          <div class="row">
+            <div class="col-12 col-md-auto text-center">
+              <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="../speakers/Jesus Serrano.png"
+                alt="" />
+            </div>
 
-                      <div class="col text-center text-md-start mx-auto">
-                          <h2 class="name mb-2">Jesus Serrano</h2>
-                          <div class="meta mb-2">Microsoft</div>
-                          <ul class="social-list list-inline mb-0">
-                            
-                            <li class="list-inline-item"><a  href="https://www.linkedin.com/in/jscastro/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-                            
-                            
-                          </ul><!--//social-list-->
-                      </div><!--//col-->
-                  </div><!--//row-->
-              </div>
-              <div class="desc p-2 p-lg-3">
-                <p><p>From prompt to play: witness how cutting-edge generative models, clever chaining and a sprinkle of game-dev know-how can birth an end-to-end, fully-playable beat ’em up... Including art, music, code and lore.... just in my spare time. 
+            <div class="col text-center text-md-start mx-auto">
+              <h2 class="name mb-2">Jesus Serrano</h2>
+              <div class="meta mb-2">Microsoft</div>
+              <ul class="social-list list-inline mb-0">
+                
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/jscastro/"><i
+                      class="fab fa-linkedin-in fa-fw"></i></a></li>
+                
+                
+              </ul><!--//social-list-->
+            </div><!--//col-->
+          </div><!--//row-->
+        </div>
+        <div class="desc p-2 p-lg-3">
+          <p><p>From prompt to play: witness how cutting-edge generative models, clever chaining and a sprinkle of game-dev know-how can birth an end-to-end, fully-playable beat ’em up... Including art, music, code and lore.... just in my spare time. 
 Get inspired, steal workflows, ship your dream game.</p></p>
-              </div>
-              <div class="desc p-2 p-lg-3">
-                <p></p>
-              </div>
-              <div class="desc p-2 p-lg-3">
-                <p><p>Jesus has 30 years of experience in the digital sector, including 19 years at Microsoft, where he specialized in blending Artificial Intelligence and User Experience, drawing on his background as both an engineer and designer.
+        </div>
+        <div class="desc p-2 p-lg-3">
+          <p></p>
+        </div>
+        <div class="desc p-2 p-lg-3">
+          <p><p>Jesus has 30 years of experience in the digital sector, including 19 years at Microsoft, where he specialized in blending Artificial Intelligence and User Experience, drawing on his background as both an engineer and designer.
 In 2014, he became the inventor of a protected Microsoft patent, earning recognition for his innovative work.Jesus has collaborated with over 200 clients across 35 countries in industries like sports, entertainment, media, and retail.
 He has led the design and development of consumer apps with millions of downloads and is an award-winning speaker with over 100 sessions and keynotes at global events.
 He also serves as an AI Tutor and Course Co-Director at the University of Oxford.</p></p>
-              </div>
-          </div><!--//modal-body-->
-      </div><!--//modal-content-->
+        </div>
+      </div><!--//modal-body-->
+    </div><!--//modal-content-->
   </div><!--//modal-dialog-->
 </div><!--//modal-->
 
 <!-- Modal Speaker 4 -->
-<div class="modal modal-speaker modal-speaker-4" id="modal-speaker-4" tabindex="-1" role="dialog" aria-labelledby="speaker-4-ModalLabel" aria-hidden="true">
+<div class="modal modal-speaker modal-speaker-4" id="modal-speaker-4" tabindex="-1"
+  role="dialog" aria-labelledby="speaker-4-ModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
-              <h4 id="speaker-4-ModalLabel" class="modal-title sr-only"
->Ricardo Sueiras</h4>
-          </div>
-          <div class="modal-body p-0">
-              <div class="theme-bg-light p-5">
-                  <div class="row">
-                      <div class="col-12 col-md-auto text-center">
-                          <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="../speakers/Ricardo Sueiras.png" alt="" />
-                      </div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 id="speaker-4-ModalLabel" class="modal-title sr-only">Ricardo Sueiras</h4>
+      </div>
+      <div class="modal-body p-0">
+        <div class="theme-bg-light p-5">
+          <div class="row">
+            <div class="col-12 col-md-auto text-center">
+              <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="../speakers/Ricardo Sueiras.png"
+                alt="" />
+            </div>
 
-                      <div class="col text-center text-md-start mx-auto">
-                          <h2 class="name mb-2">Ricardo Sueiras</h2>
-                          <div class="meta mb-2">AWS</div>
-                          <ul class="social-list list-inline mb-0">
-                            
-                            <li class="list-inline-item"><a  href="https://www.linkedin.com/in/ricardosueiras/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-                            
-                            
-                          </ul><!--//social-list-->
-                      </div><!--//col-->
-                  </div><!--//row-->
-              </div>
-              <div class="desc p-2 p-lg-3">
-                <p><p>AI Coding Assistants promise to revolutionise developer productivity, yet many engineers struggle to achieve consistent results. Drawing from my twelve month journey with these tools, this talk reveals practical strategies for transforming frustrating experiences into reliable outcomes. I'll share specific techniques that have consistently produced good quality code, concrete examples of successful prompting patterns, and resources that developers can use. Whether you're new to AI assistants or looking to refine your approach, you'll leave with a better understanding of the potential of these tools' to improve your development efficiency.</p></p>
-              </div>
-              <div class="desc p-2 p-lg-3">
-                <p></p>
-              </div>
-              <div class="desc p-2 p-lg-3">
-                <p><p>I am a developer advocate for open source, currently working at AWS. I am passionate about, and help customers be successful in using open source.</p></p>
-              </div>
-          </div><!--//modal-body-->
-      </div><!--//modal-content-->
+            <div class="col text-center text-md-start mx-auto">
+              <h2 class="name mb-2">Ricardo Sueiras</h2>
+              <div class="meta mb-2">AWS</div>
+              <ul class="social-list list-inline mb-0">
+                
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/ricardosueiras/"><i
+                      class="fab fa-linkedin-in fa-fw"></i></a></li>
+                
+                
+              </ul><!--//social-list-->
+            </div><!--//col-->
+          </div><!--//row-->
+        </div>
+        <div class="desc p-2 p-lg-3">
+          <p><p>AI Coding Assistants promise to revolutionise developer productivity, yet many engineers struggle to achieve consistent results. Drawing from my twelve month journey with these tools, this talk reveals practical strategies for transforming frustrating experiences into reliable outcomes. I'll share specific techniques that have consistently produced good quality code, concrete examples of successful prompting patterns, and resources that developers can use. Whether you're new to AI assistants or looking to refine your approach, you'll leave with a better understanding of the potential of these tools' to improve your development efficiency.</p></p>
+        </div>
+        <div class="desc p-2 p-lg-3">
+          <p></p>
+        </div>
+        <div class="desc p-2 p-lg-3">
+          <p><p>I am a developer advocate for open source, currently working at AWS. I am passionate about, and help customers be successful in using open source.</p></p>
+        </div>
+      </div><!--//modal-body-->
+    </div><!--//modal-content-->
   </div><!--//modal-dialog-->
 </div><!--//modal-->
 
 <!-- Modal Speaker 5 -->
-<div class="modal modal-speaker modal-speaker-5" id="modal-speaker-5" tabindex="-1" role="dialog" aria-labelledby="speaker-5-ModalLabel" aria-hidden="true">
+<div class="modal modal-speaker modal-speaker-5" id="modal-speaker-5" tabindex="-1"
+  role="dialog" aria-labelledby="speaker-5-ModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
-              <h4 id="speaker-5-ModalLabel" class="modal-title sr-only"
->W. Ian Douglas</h4>
-          </div>
-          <div class="modal-body p-0">
-              <div class="theme-bg-light p-5">
-                  <div class="row">
-                      <div class="col-12 col-md-auto text-center">
-                          <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="../speakers/W. Ian Douglas.png" alt="" />
-                      </div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 id="speaker-5-ModalLabel" class="modal-title sr-only">W. Ian Douglas</h4>
+      </div>
+      <div class="modal-body p-0">
+        <div class="theme-bg-light p-5">
+          <div class="row">
+            <div class="col-12 col-md-auto text-center">
+              <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="../speakers/W. Ian Douglas.png"
+                alt="" />
+            </div>
 
-                      <div class="col text-center text-md-start mx-auto">
-                          <h2 class="name mb-2">W. Ian Douglas</h2>
-                          <div class="meta mb-2">Block</div>
-                          <ul class="social-list list-inline mb-0">
-                            
-                            <li class="list-inline-item"><a  href="https://www.linkedin.com/in/iandouglas736/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-                            
-                            
-                          </ul><!--//social-list-->
-                      </div><!--//col-->
-                  </div><!--//row-->
-              </div>
-              <div class="desc p-2 p-lg-3">
-                <p><p>Ever found yourself doing the "vibe coding" dance? You know, where you have a brilliant idea but end up spending countless hours refactoring because the implementation didn't quite match your vision? What if I told you there's a better way to vibe with AI?</p>
+            <div class="col text-center text-md-start mx-auto">
+              <h2 class="name mb-2">W. Ian Douglas</h2>
+              <div class="meta mb-2">Block</div>
+              <ul class="social-list list-inline mb-0">
+                
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/iandouglas736/"><i
+                      class="fab fa-linkedin-in fa-fw"></i></a></li>
+                
+                
+              </ul><!--//social-list-->
+            </div><!--//col-->
+          </div><!--//row-->
+        </div>
+        <div class="desc p-2 p-lg-3">
+          <p><p>Ever found yourself doing the "vibe coding" dance? You know, where you have a brilliant idea but end up spending countless hours refactoring because the implementation didn't quite match your vision? What if I told you there's a better way to vibe with AI?</p>
 <p>Enter "vibe prompting" – the art of having meaningful conversations with AI before diving into code. Instead of immediately jumping into implementation and dealing with multiple refactoring cycles, we'll explore how to craft intentional dialogues that shape better outcomes from the start. Some strategic planning will allow you to use fewer tokens than refactoring your code a hundred times trying to hone in on what you really needed to build in the first place.</p>
 <p>Ready to take your vibe coding to the next level? Let's explore how "vibe prompting" can transform your development workflow.</p></p>
-              </div>
-              <div class="desc p-2 p-lg-3">
-                <p></p>
-              </div>
-              <div class="desc p-2 p-lg-3">
-                <p><p>I am a long-time open-source developer, educator, manager and mentor. I encourage everyone around me to share their collective knowledge, and am a strong champion of diversity in the tech industry. When I'm not working, I'm helping others with career coaching and interview preparation, tinkering with 3D printing or IoT projects, or telling dad jokes. I'm originally from Canada but currently live in the USA.</p></p>
-              </div>
-          </div><!--//modal-body-->
-      </div><!--//modal-content-->
+        </div>
+        <div class="desc p-2 p-lg-3">
+          <p></p>
+        </div>
+        <div class="desc p-2 p-lg-3">
+          <p><p>I am a long-time open-source developer, educator, manager and mentor. I encourage everyone around me to share their collective knowledge, and am a strong champion of diversity in the tech industry. When I'm not working, I'm helping others with career coaching and interview preparation, tinkering with 3D printing or IoT projects, or telling dad jokes. I'm originally from Canada but currently live in the USA.</p></p>
+        </div>
+      </div><!--//modal-body-->
+    </div><!--//modal-content-->
   </div><!--//modal-dialog-->
 </div><!--//modal-->
 
 <!-- Modal Speaker 6 -->
-<div class="modal modal-speaker modal-speaker-6" id="modal-speaker-6" tabindex="-1" role="dialog" aria-labelledby="speaker-6-ModalLabel" aria-hidden="true">
+<div class="modal modal-speaker modal-speaker-6" id="modal-speaker-6" tabindex="-1"
+  role="dialog" aria-labelledby="speaker-6-ModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
-              <h4 id="speaker-6-ModalLabel" class="modal-title sr-only"
->Ajit Jaokar</h4>
-          </div>
-          <div class="modal-body p-0">
-              <div class="theme-bg-light p-5">
-                  <div class="row">
-                      <div class="col-12 col-md-auto text-center">
-                          <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="../speakers/Ajit Jaokar.png" alt="" />
-                      </div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 id="speaker-6-ModalLabel" class="modal-title sr-only">Ajit Jaokar</h4>
+      </div>
+      <div class="modal-body p-0">
+        <div class="theme-bg-light p-5">
+          <div class="row">
+            <div class="col-12 col-md-auto text-center">
+              <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="../speakers/Ajit Jaokar.png"
+                alt="" />
+            </div>
 
-                      <div class="col text-center text-md-start mx-auto">
-                          <h2 class="name mb-2">Ajit Jaokar</h2>
-                          <div class="meta mb-2">University of Oxford</div>
-                          <ul class="social-list list-inline mb-0">
-                            
-                            <li class="list-inline-item"><a  href="https://www.linkedin.com/in/ajitjaokar/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-                            
-                            
-                          </ul><!--//social-list-->
-                      </div><!--//col-->
-                  </div><!--//row-->
-              </div>
-              <div class="desc p-2 p-lg-3">
-                <p></p>
-              </div>
-              <div class="desc p-2 p-lg-3">
-                <p></p>
-              </div>
-              <div class="desc p-2 p-lg-3">
-                <p><p>Ajit Jaokar is a Lectu Engineering Sciences at the University of Oxford, where he also serves as Course Director for the "Artificial Intelligence: Cloud and Edge Implementations" program. As an AI Ambassador at Oxford, he leads interdisciplinary AI reskilling initiatives and is actively shaping the future of AI education. Ajit is a Senior AI Fellow at the UK Ministry of Justice’s Justice AI Unit, advising on the national rollout of large-scale AI systems. He is the founder of Erdos Research and feynlabs, and his work focuses on early-stage AI prototypes and democratizing AI through accessible education. Ajit is a frequent speaker at global forums including the World Economic Forum, the European Parliament, and the G7. A passionate advocate for neurodiversity, he is currently writing a book on teaching AI through mathematical foundations to high school students.</p></p>
-              </div>
-          </div><!--//modal-body-->
-      </div><!--//modal-content-->
+            <div class="col text-center text-md-start mx-auto">
+              <h2 class="name mb-2">Ajit Jaokar</h2>
+              <div class="meta mb-2">University of Oxford</div>
+              <ul class="social-list list-inline mb-0">
+                
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/ajitjaokar/"><i
+                      class="fab fa-linkedin-in fa-fw"></i></a></li>
+                
+                
+              </ul><!--//social-list-->
+            </div><!--//col-->
+          </div><!--//row-->
+        </div>
+        <div class="desc p-2 p-lg-3">
+          <p></p>
+        </div>
+        <div class="desc p-2 p-lg-3">
+          <p></p>
+        </div>
+        <div class="desc p-2 p-lg-3">
+          <p><p>Ajit Jaokar is a Lectu Engineering Sciences at the University of Oxford, where he also serves as Course Director for the "Artificial Intelligence: Cloud and Edge Implementations" program. As an AI Ambassador at Oxford, he leads interdisciplinary AI reskilling initiatives and is actively shaping the future of AI education. Ajit is a Senior AI Fellow at the UK Ministry of Justice’s Justice AI Unit, advising on the national rollout of large-scale AI systems. He is the founder of Erdos Research and feynlabs, and his work focuses on early-stage AI prototypes and democratizing AI through accessible education. Ajit is a frequent speaker at global forums including the World Economic Forum, the European Parliament, and the G7. A passionate advocate for neurodiversity, he is currently writing a book on teaching AI through mathematical foundations to high school students.</p></p>
+        </div>
+      </div><!--//modal-body-->
+    </div><!--//modal-content-->
   </div><!--//modal-dialog-->
 </div><!--//modal-->
 
