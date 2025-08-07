@@ -6,73 +6,85 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://www.promptengineering.rocks/</loc>
-  <lastmod>2025-08-07T13:12:58.247902+00:00</lastmod>
+  <lastmod>2025-08-07T13:14:41.175936+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 
 <url>
   <loc>https://www.promptengineering.rocks/Goda_Go_AI_Productivity_Hub_Coming_soon</loc>
-  <lastmod>2025-08-07T13:12:58.247902+00:00</lastmod>
+  <lastmod>2025-08-07T13:14:41.175936+00:00</lastmod>
   <priority>0.75</priority>
 </url>
 
 <url>
   <loc>https://www.promptengineering.rocks/Maxim_Salnikov_Microsoft_Coming_soon</loc>
-  <lastmod>2025-08-07T13:12:58.247902+00:00</lastmod>
+  <lastmod>2025-08-07T13:14:41.175936+00:00</lastmod>
   <priority>0.75</priority>
 </url>
 
 <url>
   <loc>https://www.promptengineering.rocks/Dan_Cleary_PromptHub_Coming_soon</loc>
-  <lastmod>2025-08-07T13:12:58.247902+00:00</lastmod>
+  <lastmod>2025-08-07T13:14:41.175936+00:00</lastmod>
   <priority>0.75</priority>
 </url>
 
 <url>
   <loc>https://www.promptengineering.rocks/Jesus_Serrano_Microsoft_Can_AI_Develop_a_Whole_Videogame</loc>
-  <lastmod>2025-08-07T13:12:58.247902+00:00</lastmod>
+  <lastmod>2025-08-07T13:14:41.175936+00:00</lastmod>
   <priority>0.75</priority>
 </url>
 
 <url>
   <loc>https://www.promptengineering.rocks/Ricardo_Sueiras_AWS_Build_without_limits__Tips_and_techniques_for_better_Prompting</loc>
-  <lastmod>2025-08-07T13:12:58.247902+00:00</lastmod>
+  <lastmod>2025-08-07T13:14:41.175936+00:00</lastmod>
   <priority>0.75</priority>
 </url>
 
 <url>
   <loc>https://www.promptengineering.rocks/W_Ian_Douglas_Block_Vibe_Prompting_The_Secret_to_PerfectFirstTry_Vibe_Coding</loc>
-  <lastmod>2025-08-07T13:12:58.247902+00:00</lastmod>
+  <lastmod>2025-08-07T13:14:41.175936+00:00</lastmod>
   <priority>0.75</priority>
 </url>
 
 <url>
   <loc>https://www.promptengineering.rocks/Ajit_Jaokar_University_of_Oxford_Coming_soon</loc>
-  <lastmod>2025-08-07T13:12:58.247902+00:00</lastmod>
+  <lastmod>2025-08-07T13:14:41.175936+00:00</lastmod>
   <priority>0.75</priority>
 </url>
 
 <url>
   <loc>https://www.promptengineering.rocks/Pini_Reznik_recinq_Hacking_the_Authoring_Process_Lessons_from_Writing_a_Book_with_AI_</loc>
-  <lastmod>2025-08-07T13:12:58.247902+00:00</lastmod>
+  <lastmod>2025-08-07T13:14:41.175936+00:00</lastmod>
   <priority>0.75</priority>
 </url>
 
 <url>
   <loc>https://www.promptengineering.rocks/Tahreem_Rasul_Red_Buffer_Designing_Reliable_Agent_Workflows_with_Context_Engineering</loc>
-  <lastmod>2025-08-07T13:12:58.247902+00:00</lastmod>
+  <lastmod>2025-08-07T13:14:41.175936+00:00</lastmod>
   <priority>0.75</priority>
 </url>
 
 <url>
   <loc>https://www.promptengineering.rocks/Muhammad_Ahsan_Ayaz_Scania_The_Prompt_is_Dead__Long_Live_the_Context</loc>
-  <lastmod>2025-08-07T13:12:58.247902+00:00</lastmod>
+  <lastmod>2025-08-07T13:14:41.175936+00:00</lastmod>
   <priority>0.75</priority>
 </url>
 
 <url>
   <loc>https://www.promptengineering.rocks/Richard_Marginson_RDEL_Group_Unlock_Your_Teams_Potential_Building_Your_Agencys_Prompt_Playbook</loc>
-  <lastmod>2025-08-07T13:12:58.247902+00:00</lastmod>
+  <lastmod>2025-08-07T13:14:41.175936+00:00</lastmod>
+  <priority>0.75</priority>
+</url>
+
+<url>
+  <loc>https://www.promptengineering.rocks/Abhiram_Ravikumar_Publicis_Sapient_Beyond_TrialandError_Towards_Formal_Metrics_for_Prompt_Quality</loc>
+  <lastmod>2025-08-07T13:14:41.175936+00:00</lastmod>
+  <priority>0.75</priority>
+</url>
+
+<url>
+  <loc>https://www.promptengineering.rocks/Sergey_Konstantinov__Alena_Panshina_Context_Engineering_in_LLM_Pipelines</loc>
+  <lastmod>2025-08-07T13:14:41.175936+00:00</lastmod>
   <priority>0.75</priority>
 </url>
 
