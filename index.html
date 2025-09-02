@@ -127,7 +127,7 @@
                         <!-- <img class="logo-icon" src="assets/images/logo-white.svg" alt="logo"></a> -->
                     </div>
 					
-					<div class="navbar-btn order-lg-2"><a class="btn btn-secondary" href="#tickets">Tickets</a></div>
+					<div class="navbar-btn order-lg-2"><a class="btn btn-secondary" href="#tickets">Tickets On Sale</a></div>
 					
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -135,10 +135,8 @@
 					
 					<div id="navigation" class="navbar-collapse collapse  justify-content-lg-end me-lg-3">
 						<ul class="nav navbar-nav">
-							
-							<li class="nav-item"><a class="nav-link" href="/">Home</a></li>                                              
-							<li class="nav-item"><a class="nav-link scrollto" href="#tickets">Tickets</a></li>
-							<li class="nav-item"><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
+							                                            
+							<li class="nav-item"><a class="nav-link scrollto" href="#schedule">Program</a></li>
 							<li class="nav-item"><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
 							<li class="nav-item"><a class="nav-link scrollto" href="#venue">Venue</a></li>
 							<li class="nav-item"><a class="nav-link scrollto" href="#sponsors">Sponsors</a></li>
@@ -176,10 +174,10 @@
 		<div class="container">
 			<div class="hero-text-block text-center" style="max-width: 100%;">
 				<h1 class="logo retro">Prompt Engineering Conference</h1>
-				<h2 class="text-white">Learn how to interact with the world's most powerful AI</h2>
+				<h2 class="text-white">Learn how to interact with the most advanced AI on our planet</h2>
 				<h3 class="text-white"><i class="far fa-calendar-alt me-2"></i>October 16, 2025 <i class="fas fa-map-marker-alt mx-2"></i>Everyman Canary Wharf, London, UK</h3>
 				<div class="hero-cta mt-1">
-					<a class="btn btn-secondary btn-lg" href="#tickets">Get your ticket</a>
+					<a class="btn btn-secondary btn-lg" href="#tickets">Get Your Ticket</a>
 			    </div>
 			</div><!--//hero-text-block-->
 		</div><!--//container-->
@@ -1195,15 +1193,14 @@
 
 
     
-    <div class="schedule-cta text-center mx-auto"><a href="#tickets"
-        class="btn btn-secondary btn-lg d-block d-md-inline-block">Buy Tickets</a></div>
+
   </div>
 </section>
 
 
 <section id="tickets" class="tickets-section section">
   <div class="container">
-    <h3 class="section-heading text-center mb-3">Tickets</h3>
+    <h3 class="section-heading text-center mb-3">Get your ticket</h3>
 
     <p>
       Please note: For the organization of the in-person Prompt Engineering Conference 2025 in London, we are proud to
@@ -1246,66 +1243,6 @@
     
 
   </div>
-</section>
-
-<section id="about" class="about-section section">
-
-  <div class="container">
-    <div class="event-countdown text-center mb-3">
-      
-      <h4 class="countdown-intro mb-2 text-center mb-3">Event Starts In:</h4>
-      <div id="countdown-box" class="countdown-box"></div>
-      
-    </div>
-  </div>
-  <script>
-    /* ======= Countdown ========= */
-    // set the date we're counting down to
-    var target_date = new Date("2025-10-16T09:00:00-00:00").getTime();
-
-    // variables for time units
-    var days, hours, minutes, seconds;
-
-    // get tag element
-    var countdown = document.getElementById("countdown-box");
-    var days_span = document.createElement("SPAN");
-    days_span.className = 'days';
-    countdown.appendChild(days_span);
-    var hours_span = document.createElement("SPAN");
-    hours_span.className = 'hours';
-    countdown.appendChild(hours_span);
-    var minutes_span = document.createElement("SPAN");
-    minutes_span.className = 'minutes';
-    countdown.appendChild(minutes_span);
-    var secs_span = document.createElement("SPAN");
-    secs_span.className = 'secs';
-    countdown.appendChild(secs_span);
-
-    // update the tag with id "countdown" every 1 second
-    setInterval(function () {
-
-      // find the amount of "seconds" between now and target
-      var current_date = new Date().getTime();
-      var seconds_left = (target_date - current_date) / 1000;
-
-      // do some time calculations
-      days = parseInt(seconds_left / 86400);
-      seconds_left = seconds_left % 86400;
-
-      hours = parseInt(seconds_left / 3600);
-      seconds_left = seconds_left % 3600;
-
-      minutes = parseInt(seconds_left / 60);
-      seconds = parseInt(seconds_left % 60);
-
-      // format countdown string + set tag value.
-      days_span.innerHTML = '<span class="number">' + days + '</span>' + '<span class="unit">Days</span>';
-      hours_span.innerHTML = '<span class="number">' + hours + '</span>' + '<span class="unit">Hrs</span>';
-      minutes_span.innerHTML = '<span class="number">' + minutes + '</span>' + '<span class="unit">Mins</span>';
-      secs_span.innerHTML = '<span class="number">' + seconds + '</span>' + '<span class="unit">Secs</span>';
-
-    }, 1000);
-  </script>
 </section>
 
 <section id="about" class="schedule-section section theme-bg-light">
@@ -2123,7 +2060,7 @@
       
 
     </div><!--//row-->
-    <div class="speakers-cta text-center py-3"><a class="btn btn-primary btn-lg" href="#tickets">Get Tickets</a></div>
+    <div class="speakers-cta text-center py-3"><a class="btn btn-primary btn-lg" href="#tickets">Get your ticket</a></div>
   </div><!--//container-->
 
 </section><!--//speakers-section-->
