@@ -5,13 +5,13 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>https://www.promptengineering.rocks/</loc>
+  <loc>https://2025.promptengineering.rocks/</loc>
   <lastmod>{{ now }}</lastmod>
   <priority>1.00</priority>
 </url>
 {% for url, priority in urls %}
 <url>
-  <loc>https://www.promptengineering.rocks/{{ url }}</loc>
+  <loc>https://2025.promptengineering.rocks/{{ url }}</loc>
   <lastmod>{{ now }}</lastmod>
   <priority>{{ priority }}</priority>
 </url>
