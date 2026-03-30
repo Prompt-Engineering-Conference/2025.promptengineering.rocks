@@ -37,7 +37,7 @@ def generate_talk_url(talk):
 def read_csv(path):
     """ Read the pre-process the CSV """
     items = []
-    with open(path, 'r') as f:
+    with open(path, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         for item in reader:
             item = dict(item)
@@ -82,6 +82,9 @@ for i, talk in enumerate(talks_raw):
     else:
         talk["photo_url"] = talk.get("avatar")
     talk["short_url"] = generate_talk_url(talk)
+    yt = talk.get("YouTube", "").strip()
+    if yt:
+        talk["youtube_url"] = "https://www.youtube.com/watch?v=" + yt
 
 # sort into talks and keynotes
 talks = [
@@ -107,54 +110,60 @@ for talk in talks:
     tracks[track].append(talk)
 context["tracks"] = tracks_ordered
 
-# insert breaks & wrap up into each track
-breaks = context.get("breaks")
-for track in tracks_ordered:
-    old_order = tracks[track]
-    new_order = []
-    offset = 0
-    for brk in context.get("breaks"):
-        for i in range(brk.get("talks_before")):
-            if offset < len(old_order):
-                new_order.append(old_order[offset])
-                offset += 1
-        # copy because we'll be modifying times on these
-        new_order.append(brk.copy())
-    while offset < len(old_order):
-        new_order.append(old_order[offset])
-        offset += 1
-    new_order.append(dict(
-        title="Wrap up",
-        comment="Scan each other's QR codes & head to a nearby pub!"
-    ))
-    tracks[track] = new_order
+event_state = context.get("event_state")
 
-# insert keynotes or placeholders
-for i, track in enumerate(tracks_ordered):
-    current_day = (i // len(context.get("rooms"))) + 1
-    prepend = []
-    for talk in keynotes:
-        if talk.get("day") == str(current_day):
-            if i % len(context.get("rooms")) == 0:
-                prepend.append(talk)
-            else:
-                prepend.append(dict(
-                    placeholder=True,
-                    duration=talk.get("duration"),
-                ))
-    tracks[track] = prepend + tracks[track]
+if event_state == "after":
+    # Post-conference: sessions only, no breaks/wrap-up/times
+    pass
+else:
+    # insert breaks & wrap up into each track
+    breaks = context.get("breaks")
+    for track in tracks_ordered:
+        old_order = tracks[track]
+        new_order = []
+        offset = 0
+        for brk in context.get("breaks"):
+            for i in range(brk.get("talks_before")):
+                if offset < len(old_order):
+                    new_order.append(old_order[offset])
+                    offset += 1
+            # copy because we'll be modifying times on these
+            new_order.append(brk.copy())
+        while offset < len(old_order):
+            new_order.append(old_order[offset])
+            offset += 1
+        new_order.append(dict(
+            title="Wrap up",
+            comment="Scan each other's QR codes & head to a nearby pub!"
+        ))
+        tracks[track] = new_order
 
-# insert times & durations
-for track in tracks:
-    current_time = datetime.datetime.fromisoformat(context.get("start_time"))
-    for talk in tracks[track]:
-        talk["duration"] = int(talk.get("duration") or DEFAULT_TALK_DURATION)
-        talk["start_time"] = current_time
-        current_time += timedelta(minutes=talk["duration"])
+    # insert keynotes or placeholders
+    for i, track in enumerate(tracks_ordered):
+        current_day = (i // len(context.get("rooms"))) + 1
+        prepend = []
+        for talk in keynotes:
+            if talk.get("day") == str(current_day):
+                if i % len(context.get("rooms")) == 0:
+                    prepend.append(talk)
+                else:
+                    prepend.append(dict(
+                        placeholder=True,
+                        duration=talk.get("duration"),
+                    ))
+        tracks[track] = prepend + tracks[track]
 
-# remove placeholders
-for track in tracks:
-    tracks[track] = [t for t in tracks[track] if not t.get("placeholder")]
+    # insert times & durations
+    for track in tracks:
+        current_time = datetime.datetime.fromisoformat(context.get("start_time"))
+        for talk in tracks[track]:
+            talk["duration"] = int(talk.get("duration") or DEFAULT_TALK_DURATION)
+            talk["start_time"] = current_time
+            current_time += timedelta(minutes=talk["duration"])
+
+    # remove placeholders
+    for track in tracks:
+        tracks[track] = [t for t in tracks[track] if not t.get("placeholder")]
 
 
 context["talks_by_tracks"] = tracks
@@ -165,7 +174,7 @@ print(DIVIDER)
 pages = ["index.html"]
 print(f"Generating main pages: {pages}")
 for page in pages:
-    with open(BASE_FOLDER + "/" + page, "w") as f:
+    with open(BASE_FOLDER + "/" + page, "w", encoding="utf-8") as f:
         print("Writing out", page)
         template = env.get_template(page)
         f.write(template.render(page=page, **context))
@@ -175,7 +184,7 @@ for page in pages:
 # template each talk page for the event
 for talk in talks_raw:
     print("Generating talk subpage %s" % (talk.get("short_url")))
-    with open(BASE_FOLDER + "/" + talk.get("short_url").replace(".html","")  + ".html", "w") as f:
+    with open(BASE_FOLDER + "/" + talk.get("short_url").replace(".html","")  + ".html", "w", encoding="utf-8") as f:
         template = env.get_template("talk.html")
         f.write(template.render(talk=talk, **context))
         SITEMAP_URLS.append((talk.get("short_url").replace(".html",""), 0.75))
@@ -184,6 +193,6 @@ for talk in talks_raw:
 print(DIVIDER)
 print("Generating sitemap.xml with %d items" % len(SITEMAP_URLS))
 now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=datetime.timezone.utc).isoformat()
-with open(BASE_FOLDER + "/sitemap.xml", "w") as f:
+with open(BASE_FOLDER + "/sitemap.xml", "w", encoding="utf-8") as f:
     template = env.get_template("sitemap.xml")
     f.write(template.render(urls=SITEMAP_URLS, now=now))
