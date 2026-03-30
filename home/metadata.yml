@@ -92,7 +92,7 @@ hero_pictures:
 - ../photos/venue-3.jpg
 
 # probably don't need changing
-base_path: "https://promptengineering.rocks/"
+base_path: "https://2025.promptengineering.rocks/"
 base_folder: "static"
 twitter_url: https://x.com/PromptEngConf
 linkedin_url: https://www.linkedin.com/company/prompt-engineering-conference/
